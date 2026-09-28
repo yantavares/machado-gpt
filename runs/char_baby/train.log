@@ -1,0 +1,177 @@
+/content/proj/nanoGPT-master/train.py:199: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+W0926 19:28:27.764000 640 torch/_inductor/utils.py:1731] [0/0] Not enough SMs to use max_autotune_gemm mode
+Overriding config with /content/proj/experiments/configs/char_baby.py:
+# "Baby GPT" char-level (autoria do aluno): hiperparâmetros idênticos aos de
+# config/train_shakespeare_char.py do nanoGPT e aos do gpt.py do vídeo
+# (6 camadas, 6 cabeças, 384 dimensões, contexto de 256 caracteres).
+exec(open('../experiments/configs/_comum.py').read())
+out_dir = '../runs/char_baby'
+dataset = 'machado_char'
+eval_interval = 250
+eval_iters = 200
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.2
+learning_rate = 1e-3
+max_iters = 5000
+lr_decay_iters = 5000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+
+Overriding: out_dir = /content/proj/runs/char_baby
+tokens per iteration will be: 16,384
+found vocab_size = 144 (inside data/machado_char/meta.pkl)
+Initializing a new model from scratch
+number of parameters: 10.68M
+num decayed parameter tensors: 26, with 10,770,432 parameters
+num non-decayed parameter tensors: 13, with 4,992 parameters
+using fused AdamW: True
+compiling the model... (takes a ~minute)
+step 0: train loss 5.0691, val loss 5.0690
+iter 0: loss 5.0449, time 42589.20ms, mfu -100.00%
+iter 50: loss 2.4637, time 92.70ms, mfu 4.03%
+iter 100: loss 2.4152, time 94.28ms, mfu 4.02%
+iter 150: loss 2.3800, time 95.14ms, mfu 4.01%
+iter 200: loss 2.2780, time 98.72ms, mfu 3.99%
+step 250: train loss 2.0745, val loss 2.0722
+saving checkpoint to /content/proj/runs/char_baby
+iter 250: loss 2.1346, time 12743.29ms, mfu 3.59%
+iter 300: loss 2.0530, time 104.67ms, mfu 3.59%
+iter 350: loss 1.9579, time 101.65ms, mfu 3.60%
+iter 400: loss 1.8890, time 96.92ms, mfu 3.63%
+iter 450: loss 1.8319, time 98.65ms, mfu 3.64%
+step 500: train loss 1.6845, val loss 1.6803
+saving checkpoint to /content/proj/runs/char_baby
+iter 500: loss 1.7843, time 11867.64ms, mfu 3.28%
+iter 550: loss 1.6934, time 94.57ms, mfu 3.35%
+iter 600: loss 1.6848, time 97.86ms, mfu 3.39%
+iter 650: loss 1.6477, time 98.74ms, mfu 3.43%
+iter 700: loss 1.5898, time 97.06ms, mfu 3.48%
+step 750: train loss 1.5031, val loss 1.5025
+saving checkpoint to /content/proj/runs/char_baby
+iter 750: loss 1.5919, time 12174.83ms, mfu 3.13%
+iter 800: loss 1.5414, time 101.55ms, mfu 3.19%
+iter 850: loss 1.5234, time 99.74ms, mfu 3.24%
+iter 900: loss 1.5215, time 100.91ms, mfu 3.29%
+iter 950: loss 1.4942, time 97.20ms, mfu 3.34%
+step 1000: train loss 1.4049, val loss 1.4065
+saving checkpoint to /content/proj/runs/char_baby
+iter 1000: loss 1.4785, time 12186.63ms, mfu 3.01%
+iter 1050: loss 1.4298, time 98.54ms, mfu 3.09%
+iter 1100: loss 1.4725, time 96.59ms, mfu 3.17%
+iter 1150: loss 1.4406, time 99.19ms, mfu 3.23%
+iter 1200: loss 1.4275, time 95.53ms, mfu 3.30%
+step 1250: train loss 1.3489, val loss 1.3493
+saving checkpoint to /content/proj/runs/char_baby
+iter 1250: loss 1.4094, time 12085.24ms, mfu 2.97%
+iter 1300: loss 1.4144, time 94.48ms, mfu 3.07%
+iter 1350: loss 1.3854, time 97.85ms, mfu 3.14%
+iter 1400: loss 1.3686, time 95.82ms, mfu 3.22%
+iter 1450: loss 1.3604, time 99.31ms, mfu 3.27%
+step 1500: train loss 1.3117, val loss 1.3131
+saving checkpoint to /content/proj/runs/char_baby
+iter 1500: loss 1.3520, time 12148.01ms, mfu 2.95%
+iter 1550: loss 1.3833, time 98.31ms, mfu 3.03%
+iter 1600: loss 1.3593, time 97.65ms, mfu 3.11%
+iter 1650: loss 1.3782, time 99.22ms, mfu 3.18%
+iter 1700: loss 1.3326, time 100.16ms, mfu 3.23%
+step 1750: train loss 1.2805, val loss 1.2825
+saving checkpoint to /content/proj/runs/char_baby
+iter 1750: loss 1.3377, time 12265.45ms, mfu 2.91%
+iter 1800: loss 1.3233, time 99.54ms, mfu 3.00%
+iter 1850: loss 1.3037, time 98.92ms, mfu 3.07%
+iter 1900: loss 1.3193, time 99.21ms, mfu 3.14%
+iter 1950: loss 1.2939, time 96.85ms, mfu 3.22%
+step 2000: train loss 1.2590, val loss 1.2630
+saving checkpoint to /content/proj/runs/char_baby
+iter 2000: loss 1.3165, time 12295.98ms, mfu 2.90%
+iter 2050: loss 1.3199, time 97.40ms, mfu 2.99%
+iter 2100: loss 1.2936, time 100.20ms, mfu 3.06%
+iter 2150: loss 1.3005, time 98.16ms, mfu 3.14%
+iter 2200: loss 1.2941, time 96.72ms, mfu 3.21%
+step 2250: train loss 1.2402, val loss 1.2465
+saving checkpoint to /content/proj/runs/char_baby
+iter 2250: loss 1.3023, time 12258.88ms, mfu 2.89%
+iter 2300: loss 1.2894, time 99.89ms, mfu 2.98%
+iter 2350: loss 1.2898, time 99.93ms, mfu 3.05%
+iter 2400: loss 1.2927, time 99.80ms, mfu 3.12%
+iter 2450: loss 1.2574, time 98.15ms, mfu 3.19%
+step 2500: train loss 1.2244, val loss 1.2288
+saving checkpoint to /content/proj/runs/char_baby
+iter 2500: loss 1.2846, time 12242.14ms, mfu 2.87%
+iter 2550: loss 1.2433, time 102.07ms, mfu 2.95%
+iter 2600: loss 1.2574, time 97.87ms, mfu 3.04%
+iter 2650: loss 1.3028, time 98.28ms, mfu 3.12%
+iter 2700: loss 1.2895, time 97.22ms, mfu 3.19%
+step 2750: train loss 1.2046, val loss 1.2151
+saving checkpoint to /content/proj/runs/char_baby
+iter 2750: loss 1.2756, time 12180.76ms, mfu 2.87%
+iter 2800: loss 1.2781, time 100.48ms, mfu 2.96%
+iter 2850: loss 1.2547, time 95.14ms, mfu 3.05%
+iter 2900: loss 1.2528, time 98.35ms, mfu 3.13%
+iter 2950: loss 1.2224, time 97.45ms, mfu 3.20%
+step 3000: train loss 1.1892, val loss 1.2011
+saving checkpoint to /content/proj/runs/char_baby
+iter 3000: loss 1.2607, time 12160.81ms, mfu 2.88%
+iter 3050: loss 1.2348, time 97.93ms, mfu 2.98%
+iter 3100: loss 1.2420, time 99.31ms, mfu 3.05%
+iter 3150: loss 1.2569, time 99.23ms, mfu 3.13%
+iter 3200: loss 1.2378, time 98.76ms, mfu 3.19%
+step 3250: train loss 1.1780, val loss 1.1941
+saving checkpoint to /content/proj/runs/char_baby
+iter 3250: loss 1.2483, time 12195.86ms, mfu 2.87%
+iter 3300: loss 1.2333, time 98.13ms, mfu 2.97%
+iter 3350: loss 1.2636, time 96.67ms, mfu 3.06%
+iter 3400: loss 1.2379, time 100.68ms, mfu 3.12%
+iter 3450: loss 1.2183, time 100.40ms, mfu 3.18%
+step 3500: train loss 1.1662, val loss 1.1814
+saving checkpoint to /content/proj/runs/char_baby
+iter 3500: loss 1.2341, time 12205.25ms, mfu 2.87%
+iter 3550: loss 1.1769, time 100.25ms, mfu 2.95%
+iter 3600: loss 1.2228, time 98.55ms, mfu 3.04%
+iter 3650: loss 1.2252, time 97.05ms, mfu 3.12%
+iter 3700: loss 1.1787, time 95.96ms, mfu 3.20%
+step 3750: train loss 1.1576, val loss 1.1741
+saving checkpoint to /content/proj/runs/char_baby
+iter 3750: loss 1.1933, time 12188.73ms, mfu 2.88%
+iter 3800: loss 1.2354, time 101.23ms, mfu 2.96%
+iter 3850: loss 1.1964, time 101.27ms, mfu 3.03%
+iter 3900: loss 1.2368, time 97.58ms, mfu 3.11%
+iter 3950: loss 1.2282, time 95.51ms, mfu 3.19%
+step 4000: train loss 1.1474, val loss 1.1697
+saving checkpoint to /content/proj/runs/char_baby
+iter 4000: loss 1.2229, time 12156.05ms, mfu 2.88%
+iter 4050: loss 1.2020, time 99.72ms, mfu 2.96%
+iter 4100: loss 1.2162, time 99.88ms, mfu 3.04%
+iter 4150: loss 1.1901, time 98.80ms, mfu 3.12%
+iter 4200: loss 1.2049, time 97.65ms, mfu 3.19%
+step 4250: train loss 1.1425, val loss 1.1639
+saving checkpoint to /content/proj/runs/char_baby
+iter 4250: loss 1.1904, time 12126.08ms, mfu 2.87%
+iter 4300: loss 1.1773, time 96.61ms, mfu 2.97%
+iter 4350: loss 1.2062, time 99.83ms, mfu 3.05%
+iter 4400: loss 1.1704, time 98.79ms, mfu 3.12%
+iter 4450: loss 1.2128, time 99.97ms, mfu 3.18%
+step 4500: train loss 1.1394, val loss 1.1566
+saving checkpoint to /content/proj/runs/char_baby
+iter 4500: loss 1.1785, time 12126.95ms, mfu 2.87%
+iter 4550: loss 1.1360, time 96.69ms, mfu 2.97%
+iter 4600: loss 1.1688, time 96.03ms, mfu 3.06%
+iter 4650: loss 1.1986, time 97.30ms, mfu 3.14%
+iter 4700: loss 1.1725, time 97.35ms, mfu 3.21%
+step 4750: train loss 1.1339, val loss 1.1543
+saving checkpoint to /content/proj/runs/char_baby
+iter 4750: loss 1.1803, time 12119.18ms, mfu 2.89%
+iter 4800: loss 1.1930, time 98.71ms, mfu 2.98%
+iter 4850: loss 1.1812, time 99.14ms, mfu 3.06%
+iter 4900: loss 1.1945, time 97.29ms, mfu 3.14%
+iter 4950: loss 1.1575, time 97.76ms, mfu 3.20%
+step 5000: train loss 1.1326, val loss 1.1519
+saving checkpoint to /content/proj/runs/char_baby
+iter 5000: loss 1.1526, time 12129.36ms, mfu 2.89%

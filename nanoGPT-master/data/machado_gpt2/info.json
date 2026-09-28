@@ -1,0 +1,22 @@
+{
+  "tokenizador": {
+    "tipo": "tiktoken",
+    "nome": "gpt2"
+  },
+  "vocab_size": 50257,
+  "train": {
+    "tokens": 4757013,
+    "caracteres": 12040545,
+    "caracteres_por_token": 2.5311
+  },
+  "val": {
+    "tokens": 266291,
+    "caracteres": 676052,
+    "caracteres_por_token": 2.5388
+  },
+  "test": {
+    "tokens": 267254,
+    "caracteres": 677183,
+    "caracteres_por_token": 2.5339
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "tokenizador": {
+    "tipo": "char"
+  },
+  "vocab_size": 144,
+  "train": {
+    "tokens": 12040545,
+    "caracteres": 12040545,
+    "caracteres_por_token": 1.0
+  },
+  "val": {
+    "tokens": 676052,
+    "caracteres": 676052,
+    "caracteres_por_token": 1.0
+  },
+  "test": {
+    "tokens": 677183,
+    "caracteres": 677183,
+    "caracteres_por_token": 1.0
+  }
+}

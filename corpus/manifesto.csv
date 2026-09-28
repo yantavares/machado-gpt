@@ -1,0 +1,244 @@
+arquivo,genero,titulo,ano,paragrafos,caracteres,chars_treino,chars_val,chars_teste
+contos/macn001.txt,conto,Contos Fluminenses,1870,2847,321859,297217,12460,12182
+contos/macn002.txt,conto,Histórias da Meia-Noite,1873,1395,238013,212648,12384,12981
+contos/macn003.txt,conto,Papéis Avulsos,1882,1080,317653,283267,17831,16555
+contos/macn004.txt,conto,Histórias Sem Data,1884,846,292705,267173,12581,12951
+contos/macn005.txt,conto,Várias Histórias,1896,897,252067,225537,12802,13728
+contos/macn006.txt,conto,Páginas Recolhidas,1899,521,129805,112823,8353,8629
+contos/macn007.txt,conto,Relíquias de Casa Velha,1906,613,168801,151274,9218,8309
+contos/macn008.txt,conto,Três tesouros perdidos,1858,43,3711,3711,0,0
+contos/macn009.txt,conto,O País das quimeras,1862,112,29762,29762,0,0
+contos/macn010.txt,conto,Virginius,1864,185,28522,20107,4368,4047
+contos/macn011.txt,conto,Casada e viúva,1864,175,28191,28191,0,0
+contos/macn012.txt,conto,O anjo das donzelas,1864,253,34978,32886,2092,0
+contos/macn013.txt,conto,Questão de vaidade,1864,662,86787,74624,4103,8060
+contos/macn014.txt,conto,Cinco mulheres,1865,270,31695,31695,0,0
+contos/macn015.txt,conto,Uma excursão milagrosa,1866,138,32860,32860,0,0
+contos/macn016.txt,conto,Diana,1866,214,21313,13039,4091,4183
+contos/macn017.txt,conto,Felicidade pelo casamento,1866,431,45808,45808,0,0
+contos/macn018.txt,conto,Fernando e Fernanda,1866,210,33831,25694,4022,4115
+contos/macn019.txt,conto,O oráculo,1866,114,11955,11955,0,0
+contos/macn020.txt,conto,O pai,1866,534,55369,47307,4053,4009
+contos/macn021.txt,conto,A pianista,1866,371,49901,49901,0,0
+contos/macn022.txt,conto,O que são as moças,1866,261,32076,23990,4019,4067
+contos/macn023.txt,conto,Francisca,1867,224,28742,28742,0,0
+contos/macn024.txt,conto,História de uma lágrima,1867,184,23732,23732,0,0
+contos/macn025.txt,conto,Onda,1867,265,32425,24215,4032,4178
+contos/macn026.txt,conto,Possível e impossível,1867,315,38668,38668,0,0
+contos/macn027.txt,conto,O último dia de um poeta,1867,392,47804,39729,4027,4048
+contos/macn028.txt,conto,O carro nº 13,1868,238,26733,26733,0,0
+contos/macn029.txt,conto,Não é mel para boca de asno,1868,382,34783,26699,4019,4065
+contos/macn030.txt,conto,O anjo Rafael,1869,625,71715,65952,4210,1553
+contos/macn031.txt,conto,O capitão Mendonça,1870,365,45004,45004,0,0
+contos/macn032.txt,conto,O rei dos caiporas,1870,232,28434,28434,0,0
+contos/macn033.txt,conto,A vida eterna,1870,214,27849,19664,4111,4074
+contos/macn034.txt,conto,Almas agradecidas,1871,388,39203,39203,0,0
+contos/macn035.txt,conto,Ayres e Vergueiro,1871,127,19059,12171,4025,2863
+contos/macn036.txt,conto,O caminho de Damasco,1871,456,65354,65354,0,0
+contos/macn037.txt,conto,Mariana,1871,207,33231,25103,4113,4015
+contos/macn038.txt,conto,Uma águia sem asas,1872,229,25569,25569,0,0
+contos/macn039.txt,conto,Uma loureira,1872,372,37150,29044,4092,4014
+contos/macn040.txt,conto,Qual dos dois,1872,962,92231,84090,4078,4063
+contos/macn041.txt,conto,Quem não quer ser lobo...,1872,516,42835,42835,0,0
+contos/macn042.txt,conto,Rui de Leão,1872,404,50999,42880,4112,4007
+contos/macn043.txt,conto,Decadência de dois grandes homens,1873,191,25772,25772,0,0
+contos/macn044.txt,conto,Um Homem superior,1873,216,27071,18908,4152,4011
+contos/macn045.txt,conto,Nem uma nem outra,1873,811,75355,67239,4046,4070
+contos/macn046.txt,conto,Quem conta um conto...,1873,295,25555,25555,0,0
+contos/macn047.txt,conto,Tempo de crise,1873,242,21147,21147,0,0
+contos/macn048.txt,conto,Miloca,1874,240,42780,34144,4602,4034
+contos/macn049.txt,conto,Um dia de entrudo,1874,372,34420,34420,0,0
+contos/macn050.txt,conto,Muitos Anos Depois,1874,266,37629,29267,4260,4102
+contos/macn051.txt,conto,Os óculos de Pedro Antão,1874,237,34099,34099,0,0
+contos/macn052.txt,conto,Valério,1874,261,48559,40465,4052,4042
+contos/macn053.txt,conto,Antes que cases...,1875,422,44618,44618,0,0
+contos/macn054.txt,conto,Brincar com fogo,1875,174,17200,8818,4050,4332
+contos/macn055.txt,conto,A Mágoa do infeliz Cosme,1875,175,22354,22354,0,0
+contos/macn056.txt,conto,Onze anos depois,1875,261,30802,30802,0,0
+contos/macn057.txt,conto,A última receita,1875,135,11222,11222,0,0
+contos/macn058.txt,conto,Um esqueleto,1875,259,30020,21721,4132,4167
+contos/macn059.txt,conto,O sainete,1875,79,16533,16533,0,0
+contos/macn060.txt,conto,"Casa, não casa",1875,255,25282,25282,0,0
+contos/macn061.txt,conto,Longe dos Olhos,1876,245,28323,20197,4105,4021
+contos/macn062.txt,conto,O Astrólogo,1876,101,18864,18864,0,0
+contos/macn063.txt,conto,D. Mônica,1876,361,45127,37845,4210,3072
+contos/macn064.txt,conto,Encher tempo,1876,383,63547,63547,0,0
+contos/macn065.txt,conto,"O Passado, o passado",1876,189,19627,11526,4041,4060
+contos/macn066.txt,conto,Sem olhos,1876,217,36043,36043,0,0
+contos/macn067.txt,conto,To be or not to be,1876,253,29200,29200,0,0
+contos/macn068.txt,conto,História de uma fita azul,1876,314,29678,21588,4034,4056
+contos/macn069.txt,conto,Um almoço,1877,271,30779,30779,0,0
+contos/macn070.txt,conto,Um ambicioso,1877,307,37970,29913,4043,4014
+contos/macn071.txt,conto,A melhor das noivas,1877,274,33542,33542,0,0
+contos/macn072.txt,conto,Silvestre,1877,219,44184,35341,4307,4536
+contos/macn073.txt,conto,Antes da missa,1878,241,8148,8148,0,0
+contos/macn074.txt,conto,O califa de platina,1878,40,12439,12439,0,0
+contos/macn075.txt,conto,Um cão de lata ao rabo,1878,47,12767,12767,0,0
+contos/macn076.txt,conto,Conversão de um avaro,1878,216,33035,24266,4639,4130
+contos/macn077.txt,conto,Dívida extinta,1878,303,43937,43937,0,0
+contos/macn078.txt,conto,Elogio da vaidade,1878,36,12073,12073,0,0
+contos/macn079.txt,conto,Filosofia de um par de botas,1878,80,11709,8388,3321,0
+contos/macn080.txt,conto,A Herança,1878,107,16038,11383,0,4655
+contos/macn081.txt,conto,O machete,1878,145,22168,22168,0,0
+contos/macn082.txt,conto,Folha rota,1878,109,14798,14798,0,0
+contos/macn083.txt,conto,A chave,1879,243,37234,29055,4173,4006
+contos/macn084.txt,conto,O Caso da Viúva,1881,188,36414,36414,0,0
+contos/macn085.txt,conto,A mulher pálida,1881,164,26539,26539,0,0
+contos/macn086.txt,conto,O imortal,1882,122,42999,34723,4276,4000
+contos/macn087.txt,conto,Letra vencida,1882,98,21309,21309,0,0
+contos/macn088.txt,conto,O programa,1882,153,42483,33953,4074,4456
+contos/macn089.txt,conto,A idéia do Ezequiel Maia,1883,34,16136,16136,0,0
+contos/macn090.txt,conto,Médico é remédio,1883,71,11572,11572,0,0
+contos/macn091.txt,conto,História comum,1883,30,5836,5836,0,0
+contos/macn092.txt,conto,O destinado,1883,28,7453,7453,0,0
+contos/macn093.txt,conto,Troca de datas,1883,81,22831,14464,4239,4128
+contos/macn094.txt,conto,Questões de maridos,1883,60,8993,8993,0,0
+contos/macn095.txt,conto,Três conseqüências,1883,27,7741,7741,0,0
+contos/macn096.txt,conto,Vidros quebrados,1883,27,9244,9244,0,0
+contos/macn097.txt,conto,Cantiga velha,1883,86,18067,18067,0,0
+contos/macn098.txt,conto,Metafísica das rosas,1883,25,5817,5817,0,0
+contos/macn099.txt,conto,Trina e una,1884,87,20431,11719,4193,4519
+contos/macn100.txt,conto,O contrato,1884,36,7005,7005,0,0
+contos/macn101.txt,conto,A Carteira,1884,31,7323,7323,0,0
+contos/macn102.txt,conto,O Melhor Remédio,1884,48,5833,5833,0,0
+contos/macn103.txt,conto,A Viúva Sobral,1884,112,16008,16008,0,0
+contos/macn104.txt,conto,Entre duas datas,1884,89,18543,18543,0,0
+contos/macn105.txt,conto,Vinte Anos! Vinte Anos!,1884,42,8611,8611,0,0
+contos/macn106.txt,conto,O Caso do Romualdo,1884,145,34161,25527,4565,4069
+contos/macn107.txt,conto,Uma Carta,1884,44,9839,9839,0,0
+contos/macn108.txt,conto,Só,1885,48,16461,16461,0,0
+contos/macn109.txt,conto,Habilidoso,1885,35,12242,12242,0,0
+contos/macn110.txt,conto,Viagem à roda de mim mesmo,1885,65,19124,10416,4547,4161
+contos/macn111.txt,conto,Curta história,1886,18,5443,5443,0,0
+contos/macn112.txt,conto,Um dístico,1886,15,5050,5050,0,0
+contos/macn113.txt,conto,Astúcias de marido,1866,245,34194,34194,0,0
+contos/macn114.txt,conto,Pobre Cardeal!,1886,53,15647,12315,3332,0
+contos/macn115.txt,conto,Terpsícore,1886,58,16777,12161,0,4616
+contos/macn116.txt,conto,Antes a rocha Tarpéia,1887,21,6932,6932,0,0
+contos/macn117.txt,conto,Identidade,1887,75,20924,20924,0,0
+contos/macn118.txt,conto,Sales,1887,54,15938,15938,0,0
+contos/macn119.txt,conto,D. Jucunda,1889,86,20853,16779,4074,0
+contos/macn120.txt,conto,Como se inventaram os almanaques,1890,42,8141,3953,0,4188
+contos/macn121.txt,conto,Pobre Finoca!,1891,143,22277,22277,0,0
+contos/macn122.txt,conto,O caso Barreto,1892,86,21194,21194,0,0
+contos/macn123.txt,conto,Uma partida,1892,145,29449,26330,3119,0
+contos/macn124.txt,conto,Um sonho e outro sonho,1892,126,25154,21076,0,4078
+contos/macn125.txt,conto,Um quarto de século,1893,166,29663,29663,0,0
+contos/macn126.txt,conto,Vênus! Divina Vênus!,1893,132,19433,19433,0,0
+contos/macn127.txt,conto,A inglesinha Barcelos,1894,56,23572,14269,4467,4836
+contos/macn128.txt,conto,João Fernandes,1894,21,8717,8717,0,0
+contos/macn129.txt,conto,Uma noite,1895,90,26727,26727,0,0
+contos/macn130.txt,conto,Orai por ele!,1895,31,4926,4926,0,0
+contos/macn131.txt,conto,Um incêndio,1906,25,8445,8445,0,0
+contos/macn132.txt,conto,Uma por outra,1897,215,45937,36726,4941,4270
+contos/macn133.txt,conto,Flor anônima,1897,58,9469,9469,0,0
+contos/macn134.txt,conto,Jogo do bicho,1904,88,16964,16964,0,0
+contos/macn135.txt,conto,O escrivão Coimbra,1906,56,21816,12578,4485,4753
+contos/macn136.txt,conto,Bagatela,1859,120,30342,30342,0,0
+contos/macn137.txt,conto,Um para o outro,1879,275,39019,37030,1989,0
+critica/mact01.txt,crítica,"O passado, o presente e o futuro da literatura",1858,35,13135,8943,0,4192
+critica/mact02.txt,crítica,Idéias sobre o Teatro,1859,114,23243,23243,0,0
+critica/mact03.txt,crítica,Revista dos Teatros,1859,683,141833,124987,8569,8277
+critica/mact04.txt,crítica,Revista Dramática,1860,562,180166,162951,8839,8376
+critica/mact05.txt,crítica,A crítica teatral. José de Alencar: Mãe,1860,29,4709,4709,0,0
+critica/mact06.txt,crítica,"Compêndio da Gramática Portuguesa, por Vergueiro e Pertence. — À memória de Pedro V, por Castilhos, Antônio e José — Memória acerca da 2ª égloga de Virgílio, por Castilho José — Mãe, drama do sr. conselheiro José de Alencar. — Desgosto pela política.",1862,62,9368,9368,0,0
+critica/mact07.txt,crítica,"Flores e frutos. Poesias por Bruno Seabra, Garnier editor, 1862.",1862,53,4346,4346,0,0
+critica/mact08.txt,crítica,Pareceres de Machado de Assis a Diversas Peças Teatrais,1862,155,29769,25828,3941,0
+critica/mact09.txt,crítica,"A Constituinte perante a história, pelo sr. Homem de Mello. — Sombras e Luz, do sr. B. Pinheiro.",1863,58,12731,8546,0,4185
+critica/mact10.txt,crítica,"Peregrinação pela província de S. Paulo. por A. E. Zaluar, 1863, Garnier, editor.",1863,15,5577,5577,0,0
+critica/mact11.txt,crítica,"Revelações. Poesias de A. E. Zaluar, Garnier editor, 1863.",1863,76,9046,9046,0,0
+critica/mact12.txt,crítica,Dois folhetins. Suplício de uma mulher,1865,124,29075,29075,0,0
+critica/mact13.txt,crítica,O ideal do crítico,1865,20,10178,10178,0,0
+critica/mact14.txt,crítica,Álvares de Azevedo: Lira dos vinte anos,1866,12,6412,0,4394,2018
+critica/mact15.txt,crítica,Crítica teatral,1906,123,54825,54825,0,0
+critica/mact16.txt,crítica,Fagundes Varela: Cantos e fantasias,1866,15,10917,10917,0,0
+critica/mact17.txt,crítica,J.M. de Macedo: O culto do dever,1866,22,14723,8871,4190,1662
+critica/mact18.txt,crítica,José de Alencar: Iracema,,30,14819,14819,0,0
+critica/mact19.txt,crítica,Junqueira Freire: Inspirações do claustro,1866,47,12524,12524,0,0
+critica/mact20.txt,crítica,Porto Alegre: Colombo,1866,8,4262,4262,0,0
+critica/mact21.txt,crítica,Propósito,1866,8,6472,6472,0,0
+critica/mact22.txt,crítica,Castro Alves,1868,37,15888,15888,0,0
+critica/mact23.txt,crítica,Lúcio de Mendonça: Névoas matutinas,1872,20,4175,4175,0,0
+critica/mact24.txt,crítica,Un cuento endemoniado e La mujer misteriosa. por Guilherme Malta. [1],1938,113,17477,9114,4356,4007
+critica/mact25.txt,crítica,Notícia da atual literatura brasileira. Instinto de nacionalidade,1873,46,25063,25063,0,0
+critica/mact26.txt,crítica,Fagundes Varela,1875,13,4724,4724,0,0
+critica/mact27.txt,crítica,Eça de Queirós: O Primo Basílio,1878,47,31976,31976,0,0
+critica/mact28.txt,crítica,Francisco de Castro: Harmonias errantes,1878,10,5049,5049,0,0
+critica/mact29.txt,crítica,A nova geração,1879,210,81138,72651,4297,4190
+critica/mact30.txt,crítica,Carlos Jansen: Contos seletos das mil e uma noites,1882,8,4634,4634,0,0
+critica/mact31.txt,crítica,Raimundo Correia: Sinfonias,1883,23,5671,4559,1112,0
+critica/mact32.txt,crítica,Alberto de Oliveira: Meridionais,1884,11,5432,865,0,4567
+critica/mact33.txt,crítica,Enéias Galvão: Miragens,1885,7,2346,2346,0,0
+critica/mact34.txt,crítica,L. L. Fernandes Pinheiro Júnior: Tipos e quadros,1886,8,1665,1665,0,0
+critica/mact35.txt,crítica,José de Alencar: O Guarani,1887,14,10519,10519,0,0
+critica/mact36.txt,crítica,Henriqueta Renan,1896,23,31868,31868,0,0
+critica/mact37.txt,crítica,Discursos na Academia Brasileira de Letras,1897,13,5803,5803,0,0
+critica/mact38.txt,crítica,Magalhães de Azeredo: Procelárias,1898,45,8236,8236,0,0
+critica/mact39.txt,crítica,Cenas da vida amazônica. por José Veríssimo.,1899,13,9330,4393,4151,786
+critica/mact40.txt,crítica,Garrett,1899,16,4849,4849,0,0
+critica/mact41.txt,crítica,Eça de Queirós,1900,3,1980,1980,0,0
+critica/mact42.txt,crítica,Eduardo Prado,1901,7,3939,3939,0,0
+critica/mact43.txt,crítica,Magalhães de Azeredo: Horas sagradas; Mário de Alencar: Versos,1902,70,8269,8269,0,0
+critica/mact44.txt,crítica,Oliveira Lima: Secretário D’El-Rei,1904,9,3812,3812,0,0
+critica/mact45.txt,crítica,Joaquim Nabuco: Pensées détachées et souvenirs,1906,10,6580,6580,0,0
+cronica/macr01.txt,crônica,Comentários da semana,1861,668,128147,113187,8649,6311
+cronica/macr02.txt,crônica,Crônicas do Dr. Semana,1861,847,119628,111406,4219,4003
+cronica/macr03.txt,crônica,Crônicas,1862,361,113903,105112,4666,4125
+cronica/macr04.txt,crônica,Ao Acaso (Crônicas da Semana),1864,2275,454584,405256,24511,24817
+cronica/macr05.txt,crônica,Cartas Fluminenses,1867,44,20514,20514,0,0
+cronica/macr06.txt,crônica,Badaladas,1871,665,61393,53244,4042,4107
+cronica/macr07.txt,crônica,História de Quinze Dias,1876,622,114656,106393,4213,4050
+cronica/macr08.txt,crônica,História dos trinta dias,1878,100,12716,12518,198,0
+cronica/macr09.txt,crônica,Notas semanais,1878,268,96899,83962,4254,8683
+cronica/macr10.txt,crônica,Balas de Estalo,1883,727,188813,172167,8098,8548
+cronica/macr11.txt,crônica,Bons Dias!,1888,556,122344,113871,4464,4009
+cronica/macr12.txt,crônica,A semana,1892,3381,1536419,1379971,77853,78595
+cronica/macr13.txt,crônica,O jornal e o livro,1859,55,16101,16101,0,0
+cronica/macr14.txt,crônica,A Reforma pelo jornal,1859,25,4943,4943,0,0
+cronica/macr15.txt,crônica,Aquarelas,1859,165,32232,23786,4228,4218
+cronica/macr16.txt,crônica,O Visconde de Castilho,1875,6,1638,1638,0,0
+cronica/macr17.txt,crônica,Cherchez la femme,1881,11,3653,3653,0,0
+cronica/macr18.txt,crônica,José de Alencar,1883,6,405,405,0,0
+cronica/macr19.txt,crônica,Joaquim Serra,1888,10,4491,4491,0,0
+cronica/macr20.txt,crônica,O futuro dos argentinos,1888,8,3108,3108,0,0
+cronica/macr21.txt,crônica,Entre 1892 e 1894,1892,103,31708,31708,0,0
+cronica/macr22.txt,crônica,Henrique Chaves,1893,7,3957,3957,0,0
+cronica/macr23.txt,crônica,Henrique Lombaerts,1897,3,981,981,0,0
+cronica/macr24.txt,crônica,O Velho Senado,1898,20,24631,16158,4429,4044
+miscelanea/mams01.txt,miscelânea,Os imortais,1859,22,6659,6659,0,0
+miscelanea/mams02.txt,miscelânea,Queda que as mulheres têm para os tolos,1861,77,20795,20795,0,0
+miscelanea/mams03.txt,miscelânea,Carta ao Sr. Bispo do Rio de Janeiro,1862,36,8491,8491,0,0
+miscelanea/mams04.txt,miscelânea,Carta à Redação da Imprensa Acadêmica,1885,16,3171,3171,0,0
+miscelanea/mams05.txt,miscelânea,Pedro Luís,1884,22,6169,6169,0,0
+miscelanea/mams06.txt,miscelânea,A morte de Francisco Otaviano,1889,2,975,975,0,0
+miscelanea/mams07.txt,miscelânea,Secretaria da Agricultura,1890,9,3491,0,3491,0
+miscelanea/mams08.txt,miscelânea,A Paixão de Jesus,1904,13,8391,4115,0,4276
+miscelanea/mams09.txt,miscelânea,Gonçalves Dias,1906,10,3928,3928,0,0
+miscelanea/mams10.txt,miscelânea,A Estátua de José de Alencar,1906,11,5592,5592,0,0
+poesia/maps01.txt,poesia,Crisálidas,1864,2057,70137,61857,4043,4237
+poesia/maps02.txt,poesia,Falenas,1870,2951,97735,89683,4009,4043
+poesia/maps03.txt,poesia,Americanas,1875,2711,99028,90974,4029,4025
+poesia/maps04.txt,poesia,Gazeta de Holanda,1886,4450,113903,97857,8013,8033
+poesia/maps05.txt,poesia,Ocidentais,1901,1204,40799,40799,0,0
+poesia/maps06.txt,poesia,O Almada,1910,2500,101074,93015,4024,4035
+poesia/maps07.txt,poesia,Poesias dispersas,1855,4047,128474,112399,8045,8030
+romance/marm01.txt,romance,Ressurreição,1872,1203,212990,188240,12430,12320
+romance/marm02.txt,romance,A Mão e a Luva,1874,845,200535,184256,8076,8203
+romance/marm03.txt,romance,Helena,1876,1403,327192,291868,18031,17293
+romance/marm04.txt,romance,Iaiá Garcia,1878,1351,325518,290769,17469,17280
+romance/marm05.txt,romance,Memórias Póstumas de Brás Cubas,1880,1246,354231,320382,16679,17170
+romance/marm06.txt,romance,Casa Velha,1885,529,126378,117618,4416,4344
+romance/marm07.txt,romance,Quincas Borba,1891,2038,444270,400722,20954,22594
+romance/marm08.txt,romance,Dom Casmurro,1899,1723,371562,328925,21204,21433
+romance/marm09.txt,romance,Esaú e Jacó,1904,1744,410123,368314,21162,20647
+romance/marm10.txt,romance,Memorial de Aires,1908,1168,281018,255511,12924,12583
+teatro/matt01.txt,teatro,As Forcas Caudinas,1956,710,48207,39804,4222,4181
+teatro/matt02.txt,teatro,"Hoje avental, amanhã luva",1860,681,23959,23959,0,0
+teatro/matt03.txt,teatro,Desencantos,1861,1246,46102,45100,1002,0
+teatro/matt04.txt,teatro,O caminho da porta O protocolo,1863,1731,69267,65177,0,4090
+teatro/matt05.txt,teatro,Quase ministro,1864,677,29345,21065,4231,4049
+teatro/matt06.txt,teatro,Os Deuses de casaca,1866,1260,33682,33682,0,0
+teatro/matt07.txt,teatro,O Bote de Rapé,1878,221,7577,7577,0,0
+teatro/matt08.txt,teatro,"Tu, só tu, puro amor",1880,409,38931,30607,4142,4182
+teatro/matt09.txt,teatro,Não consultes médico,1899,396,31042,31042,0,0
+teatro/matt10.txt,teatro,Lição de Botânica,1906,520,33344,25128,4023,4193

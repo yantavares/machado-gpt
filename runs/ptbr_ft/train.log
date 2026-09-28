@@ -1,0 +1,188 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Overriding config with /content/proj/experiments/configs/ptbr_ft.py:
+# Ajuste fino do GPorTuguese-2 (124M, GPT-2 small adaptado à Wikipédia em português por P. Guillou) no corpus
+# (autoria do aluno). Segue config/finetune_shakespeare.py do nanoGPT, com
+# taxa menor, decaimento cosseno e contexto de 512 tokens.
+exec(open('../experiments/configs/_comum.py').read())
+out_dir = '../runs/ptbr_ft'
+dataset = 'machado_ptbr'
+init_from = 'pierreguillou/gpt2-small-portuguese'
+eval_interval = 100
+eval_iters = 40
+log_interval = 10
+# 8 x 4 x 512 = 16.384 tokens por iteração; 1 época ~ 183 iterações
+batch_size = 8
+gradient_accumulation_steps = 4
+block_size = 512
+dropout = 0.1
+learning_rate = 6e-5
+max_iters = 1200
+lr_decay_iters = 1200
+min_lr = 6e-6
+warmup_iters = 50
+weight_decay = 0.1
+
+Overriding: out_dir = /content/proj/runs/ptbr_ft
+tokens per iteration will be: 16,384
+Initializing from OpenAI GPT-2 weights: pierreguillou/gpt2-small-portuguese
+loading weights from pretrained gpt: pierreguillou/gpt2-small-portuguese
+config from checkpoint: {'n_layer': 12, 'n_head': 12, 'n_embd': 768, 'vocab_size': 50257, 'block_size': 1024, 'bias': True}
+overriding dropout rate to 0.1
+number of parameters: 123.65M
+Loading weights:   0%|          | 0/149 [00:00<?, ?it/s]Loading weights: 100%|██████████| 149/149 [00:00<00:00, 27384.92it/s]
+[transformers] [1mGPT2LMHeadModel LOAD REPORT[0m from: pierreguillou/gpt2-small-portuguese
+Key                                     | Status     |  | 
+----------------------------------------+------------+--+-
+transformer.h.{0...11}.attn.masked_bias | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+/content/proj/nanoGPT-master/train.py:199: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+W0926 19:46:13.762000 5262 torch/_inductor/utils.py:1731] [0/0] Not enough SMs to use max_autotune_gemm mode
+num decayed parameter tensors: 50, with 123,925,248 parameters
+num non-decayed parameter tensors: 98, with 121,344 parameters
+using fused AdamW: True
+compiling the model... (takes a ~minute)
+step 0: train loss 4.5159, val loss 4.5288
+iter 0: loss 4.7291, time 53101.51ms, mfu -100.00%
+iter 10: loss 4.5851, time 979.58ms, mfu 4.28%
+iter 20: loss 4.6459, time 1001.03ms, mfu 4.27%
+iter 30: loss 4.5501, time 951.87ms, mfu 4.29%
+iter 40: loss 4.3902, time 922.90ms, mfu 4.31%
+iter 50: loss 4.5062, time 893.91ms, mfu 4.35%
+iter 60: loss 4.5142, time 893.32ms, mfu 4.38%
+iter 70: loss 4.2434, time 905.22ms, mfu 4.41%
+iter 80: loss 4.1932, time 918.08ms, mfu 4.42%
+iter 90: loss 4.4641, time 928.59ms, mfu 4.43%
+step 100: train loss 4.1063, val loss 4.1577
+saving checkpoint to /content/proj/runs/ptbr_ft
+iter 100: loss 4.2392, time 22637.83ms, mfu 4.01%
+iter 110: loss 4.2395, time 919.17ms, mfu 4.06%
+iter 120: loss 4.1069, time 971.32ms, mfu 4.09%
+iter 130: loss 4.2374, time 1004.46ms, mfu 4.10%
+iter 140: loss 4.1697, time 950.36ms, mfu 4.13%
+iter 150: loss 4.2407, time 919.63ms, mfu 4.17%
+iter 160: loss 3.9975, time 905.49ms, mfu 4.22%
+iter 170: loss 4.2565, time 889.35ms, mfu 4.27%
+iter 180: loss 3.8562, time 898.04ms, mfu 4.31%
+iter 190: loss 4.0303, time 912.88ms, mfu 4.34%
+step 200: train loss 3.9966, val loss 4.0677
+saving checkpoint to /content/proj/runs/ptbr_ft
+iter 200: loss 4.2745, time 26901.25ms, mfu 3.92%
+iter 210: loss 4.1379, time 928.17ms, mfu 3.98%
+iter 220: loss 4.2377, time 975.59ms, mfu 4.01%
+iter 230: loss 3.8766, time 991.03ms, mfu 4.03%
+iter 240: loss 4.0498, time 947.35ms, mfu 4.07%
+iter 250: loss 4.0367, time 910.51ms, mfu 4.13%
+iter 260: loss 4.0326, time 906.03ms, mfu 4.18%
+iter 270: loss 4.2370, time 883.19ms, mfu 4.23%
+iter 280: loss 4.0555, time 888.20ms, mfu 4.28%
+iter 290: loss 3.8915, time 911.84ms, mfu 4.31%
+step 300: train loss 3.8864, val loss 4.0010
+saving checkpoint to /content/proj/runs/ptbr_ft
+iter 300: loss 4.3173, time 44320.13ms, mfu 3.89%
+iter 310: loss 3.9915, time 940.35ms, mfu 3.95%
+iter 320: loss 4.1318, time 981.14ms, mfu 3.98%
+iter 330: loss 3.8573, time 987.54ms, mfu 4.01%
+iter 340: loss 4.0136, time 942.68ms, mfu 4.05%
+iter 350: loss 4.0413, time 908.74ms, mfu 4.11%
+iter 360: loss 4.0220, time 891.00ms, mfu 4.17%
+iter 370: loss 4.1663, time 895.39ms, mfu 4.22%
+iter 380: loss 3.8729, time 893.11ms, mfu 4.27%
+iter 390: loss 4.0101, time 905.48ms, mfu 4.30%
+step 400: train loss 3.8737, val loss 3.9635
+saving checkpoint to /content/proj/runs/ptbr_ft
+iter 400: loss 4.0841, time 86926.32ms, mfu 3.88%
+iter 410: loss 4.1236, time 933.70ms, mfu 3.94%
+iter 420: loss 3.9734, time 973.00ms, mfu 3.98%
+iter 430: loss 3.8590, time 986.56ms, mfu 4.00%
+iter 440: loss 4.0436, time 947.25ms, mfu 4.05%
+iter 450: loss 4.0370, time 907.22ms, mfu 4.10%
+iter 460: loss 4.0867, time 900.00ms, mfu 4.16%
+iter 470: loss 3.9738, time 892.97ms, mfu 4.21%
+iter 480: loss 3.8869, time 906.67ms, mfu 4.25%
+iter 490: loss 3.9063, time 903.98ms, mfu 4.29%
+step 500: train loss 3.7926, val loss 3.9374
+saving checkpoint to /content/proj/runs/ptbr_ft
+iter 500: loss 3.9042, time 100571.78ms, mfu 3.87%
+iter 510: loss 4.1273, time 978.80ms, mfu 3.91%
+iter 520: loss 3.8050, time 999.10ms, mfu 3.94%
+iter 530: loss 4.0244, time 956.15ms, mfu 3.98%
+iter 540: loss 3.7569, time 917.91ms, mfu 4.04%
+iter 550: loss 4.0402, time 901.75ms, mfu 4.10%
+iter 560: loss 3.6739, time 885.97ms, mfu 4.17%
+iter 570: loss 3.8216, time 891.93ms, mfu 4.22%
+iter 580: loss 3.7894, time 901.56ms, mfu 4.26%
+iter 590: loss 4.0483, time 917.78ms, mfu 4.29%
+step 600: train loss 3.7961, val loss 3.8968
+saving checkpoint to /content/proj/runs/ptbr_ft
+iter 600: loss 3.8936, time 55925.81ms, mfu 3.87%
+iter 610: loss 3.8159, time 941.30ms, mfu 3.93%
+iter 620: loss 3.9806, time 991.00ms, mfu 3.96%
+iter 630: loss 3.8085, time 973.28ms, mfu 3.99%
+iter 640: loss 3.7575, time 932.41ms, mfu 4.04%
+iter 650: loss 3.8683, time 912.39ms, mfu 4.10%
+iter 660: loss 3.7963, time 894.17ms, mfu 4.16%
+iter 670: loss 3.7777, time 888.26ms, mfu 4.22%
+iter 680: loss 3.9391, time 904.90ms, mfu 4.26%
+iter 690: loss 3.9637, time 910.19ms, mfu 4.29%
+step 700: train loss 3.7745, val loss 3.9053
+iter 700: loss 3.8330, time 6670.30ms, mfu 3.93%
+iter 710: loss 3.6231, time 935.06ms, mfu 3.98%
+iter 720: loss 3.8249, time 933.24ms, mfu 4.03%
+iter 730: loss 4.0662, time 911.67ms, mfu 4.09%
+iter 740: loss 4.0715, time 911.57ms, mfu 4.14%
+iter 750: loss 3.9876, time 913.27ms, mfu 4.19%
+iter 760: loss 4.0541, time 904.60ms, mfu 4.23%
+iter 770: loss 3.8704, time 910.50ms, mfu 4.27%
+iter 780: loss 3.6997, time 919.29ms, mfu 4.30%
+iter 790: loss 3.9830, time 923.94ms, mfu 4.32%
+step 800: train loss 3.7099, val loss 3.8705
+saving checkpoint to /content/proj/runs/ptbr_ft
+iter 800: loss 4.0560, time 55007.53ms, mfu 3.90%
+iter 810: loss 3.7146, time 922.15ms, mfu 3.96%
+iter 820: loss 3.8885, time 976.88ms, mfu 4.00%
+iter 830: loss 3.8574, time 992.70ms, mfu 4.02%
+iter 840: loss 3.9502, time 940.37ms, mfu 4.06%
+iter 850: loss 3.9576, time 909.89ms, mfu 4.12%
+iter 860: loss 4.0854, time 905.70ms, mfu 4.17%
+iter 870: loss 3.8377, time 889.77ms, mfu 4.22%
+iter 880: loss 3.7838, time 896.22ms, mfu 4.27%
+iter 890: loss 3.8656, time 914.72ms, mfu 4.30%
+step 900: train loss 3.6866, val loss 3.8708
+iter 900: loss 3.9968, time 6668.22ms, mfu 3.93%
+iter 910: loss 3.7190, time 929.52ms, mfu 3.99%
+iter 920: loss 3.7766, time 927.05ms, mfu 4.04%
+iter 930: loss 3.8687, time 917.18ms, mfu 4.10%
+iter 940: loss 3.8644, time 909.33ms, mfu 4.15%
+iter 950: loss 3.8889, time 910.58ms, mfu 4.19%
+iter 960: loss 3.7540, time 911.77ms, mfu 4.23%
+iter 970: loss 3.6953, time 913.63ms, mfu 4.27%
+iter 980: loss 3.8965, time 910.38ms, mfu 4.30%
+iter 990: loss 3.7238, time 907.96ms, mfu 4.34%
+step 1000: train loss 3.7031, val loss 3.8833
+iter 1000: loss 4.0736, time 6627.13ms, mfu 3.96%
+iter 1010: loss 3.9615, time 920.23ms, mfu 4.02%
+iter 1020: loss 3.7912, time 911.29ms, mfu 4.08%
+iter 1030: loss 3.8324, time 911.02ms, mfu 4.13%
+iter 1040: loss 3.8008, time 921.87ms, mfu 4.18%
+iter 1050: loss 3.8752, time 913.00ms, mfu 4.22%
+iter 1060: loss 3.8085, time 917.15ms, mfu 4.25%
+iter 1070: loss 3.5384, time 910.96ms, mfu 4.29%
+iter 1080: loss 3.7451, time 909.77ms, mfu 4.32%
+iter 1090: loss 3.6465, time 905.25ms, mfu 4.35%
+step 1100: train loss 3.6651, val loss 3.8885
+iter 1100: loss 3.8066, time 6570.38ms, mfu 3.98%
+iter 1110: loss 3.9437, time 914.28ms, mfu 4.04%
+iter 1120: loss 3.6972, time 904.70ms, mfu 4.10%
+iter 1130: loss 3.8078, time 902.78ms, mfu 4.15%
+iter 1140: loss 3.8470, time 911.86ms, mfu 4.20%
+iter 1150: loss 3.8564, time 908.68ms, mfu 4.24%
+iter 1160: loss 3.8330, time 919.56ms, mfu 4.27%
+iter 1170: loss 3.8633, time 916.50ms, mfu 4.30%
+iter 1180: loss 3.6502, time 920.09ms, mfu 4.33%
+iter 1190: loss 3.7748, time 914.74ms, mfu 4.35%
+step 1200: train loss 3.7281, val loss 3.8669
+saving checkpoint to /content/proj/runs/ptbr_ft
+iter 1200: loss 3.9201, time 108871.82ms, mfu 3.92%

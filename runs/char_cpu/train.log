@@ -1,0 +1,94 @@
+/home/yan/ia-dibio/nanoGPT-master/train.py:199: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+Overriding config with /home/yan/ia-dibio/experiments/configs/char_cpu.py:
+# Char-level mínimo, na CPU (autoria do aluno).
+# Mesmos hiperparâmetros da receita "I only have a macbook" do README do nanoGPT.
+exec(open('../experiments/configs/_comum.py').read())
+out_dir = '../runs/char_cpu'
+dataset = 'machado_char'
+device = 'cpu'
+compile = False
+dtype = 'float32'
+eval_interval = 250
+eval_iters = 20
+log_interval = 50
+gradient_accumulation_steps = 1
+batch_size = 12
+block_size = 64
+n_layer = 4
+n_head = 4
+n_embd = 128
+dropout = 0.0
+learning_rate = 1e-3
+max_iters = 2000
+lr_decay_iters = 2000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+
+Overriding: out_dir = /home/yan/ia-dibio/runs/char_cpu
+tokens per iteration will be: 768
+found vocab_size = 144 (inside data/machado_char/meta.pkl)
+Initializing a new model from scratch
+number of parameters: 0.81M
+num decayed parameter tensors: 18, with 813,056 parameters
+num non-decayed parameter tensors: 9, with 1,152 parameters
+using fused AdamW: False
+step 0: train loss 5.0088, val loss 5.0125
+iter 0: loss 5.0090, time 422.45ms, mfu -100.00%
+iter 50: loss 2.9918, time 25.58ms, mfu 0.05%
+iter 100: loss 2.5266, time 36.73ms, mfu 0.05%
+iter 150: loss 2.4151, time 52.81ms, mfu 0.05%
+iter 200: loss 2.4554, time 43.71ms, mfu 0.04%
+step 250: train loss 2.4034, val loss 2.3972
+saving checkpoint to /home/yan/ia-dibio/runs/char_cpu
+iter 250: loss 2.3933, time 689.07ms, mfu 0.04%
+iter 300: loss 2.4459, time 42.48ms, mfu 0.04%
+iter 350: loss 2.3732, time 44.17ms, mfu 0.04%
+iter 400: loss 2.3079, time 44.84ms, mfu 0.04%
+iter 450: loss 2.2569, time 42.42ms, mfu 0.04%
+step 500: train loss 2.2488, val loss 2.2610
+saving checkpoint to /home/yan/ia-dibio/runs/char_cpu
+iter 500: loss 2.2890, time 692.30ms, mfu 0.03%
+iter 550: loss 2.1666, time 53.89ms, mfu 0.03%
+iter 600: loss 2.1742, time 55.07ms, mfu 0.03%
+iter 650: loss 2.2687, time 51.46ms, mfu 0.03%
+iter 700: loss 2.2972, time 43.84ms, mfu 0.03%
+step 750: train loss 2.1905, val loss 2.1697
+saving checkpoint to /home/yan/ia-dibio/runs/char_cpu
+iter 750: loss 2.0978, time 631.53ms, mfu 0.03%
+iter 800: loss 2.1883, time 42.62ms, mfu 0.03%
+iter 850: loss 2.0302, time 42.76ms, mfu 0.03%
+iter 900: loss 2.0596, time 43.38ms, mfu 0.03%
+iter 950: loss 2.1524, time 46.15ms, mfu 0.03%
+step 1000: train loss 2.0772, val loss 2.0624
+saving checkpoint to /home/yan/ia-dibio/runs/char_cpu
+iter 1000: loss 2.0690, time 583.22ms, mfu 0.03%
+iter 1050: loss 2.1516, time 42.84ms, mfu 0.03%
+iter 1100: loss 2.0499, time 44.28ms, mfu 0.03%
+iter 1150: loss 2.0057, time 43.72ms, mfu 0.03%
+iter 1200: loss 2.0680, time 42.31ms, mfu 0.03%
+step 1250: train loss 1.9869, val loss 1.9911
+saving checkpoint to /home/yan/ia-dibio/runs/char_cpu
+iter 1250: loss 1.9742, time 616.89ms, mfu 0.02%
+iter 1300: loss 1.9963, time 42.61ms, mfu 0.03%
+iter 1350: loss 2.0144, time 44.64ms, mfu 0.03%
+iter 1400: loss 1.9631, time 43.50ms, mfu 0.03%
+iter 1450: loss 1.9359, time 43.91ms, mfu 0.03%
+step 1500: train loss 1.9571, val loss 1.9492
+saving checkpoint to /home/yan/ia-dibio/runs/char_cpu
+iter 1500: loss 1.9424, time 596.07ms, mfu 0.02%
+iter 1550: loss 1.8894, time 42.31ms, mfu 0.02%
+iter 1600: loss 1.9700, time 42.19ms, mfu 0.03%
+iter 1650: loss 1.9040, time 42.59ms, mfu 0.03%
+iter 1700: loss 1.7967, time 42.68ms, mfu 0.03%
+step 1750: train loss 1.9359, val loss 1.9363
+saving checkpoint to /home/yan/ia-dibio/runs/char_cpu
+iter 1750: loss 1.8883, time 596.33ms, mfu 0.02%
+iter 1800: loss 1.8328, time 45.45ms, mfu 0.02%
+iter 1850: loss 1.9497, time 49.94ms, mfu 0.02%
+iter 1900: loss 1.8205, time 50.44ms, mfu 0.02%
+iter 1950: loss 1.8179, time 49.74ms, mfu 0.02%
+step 2000: train loss 1.9134, val loss 1.8710
+saving checkpoint to /home/yan/ia-dibio/runs/char_cpu
+iter 2000: loss 1.9463, time 675.63ms, mfu 0.02%

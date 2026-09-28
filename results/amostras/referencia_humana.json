@@ -1,0 +1,53 @@
+{
+  "modelo": "referência humana (teste)",
+  "metricas": {
+    "palavras": 690,
+    "palavras_validas": 0.9840579710144928,
+    "distinct_1": 0.5608695652173913,
+    "distinct_2": 0.9647058823529412,
+    "memorizacao_8grama": 0.0064516129032258064,
+    "repeticao_4grama": 0.004545454545454545
+  },
+  "amostras": [
+    {
+      "prompt": "Jesus reatou então os seus atos e parábolas, mostrando o que era e o que trazia no coração. Os fariseus viram que ele expelia do templo os que lá",
+      "referencia": " vendiam e compravam, e ouviram que pregava no templo ou fora dele a doutrina com que vinha extirpar os pecados da terra. Alguma vez as imprecações que lhe saíam da boca, eram contra eles próprios: \"Ai de vós, escribas e fariseus hipócritas, porque devorais as casas das viúvas, fazendo longas orações...\" — \"Ai de vós, escribas e fariseus, porque alimpais o que está por fora do copo e do prato, e p"
+    },
+    {
+      "prompt": "Sacudiu a cabeça e guiou para casa. Não jantou sem que a imagem do santo viesse espreitá-lo duas ou três vezes, com o olhar seráfico e o gesto de",
+      "referencia": " imortal bem-aventurança. Ao pobre escrivão vinha agora mais esta mágoa, este outro deserto árido e maior. Não cria; faltava-lhe a doce fé religiosa, dizia consigo. Saiu a passeio, à noite e, para encurtar caminho, enfiou por um beco. Deixando o beco, pareceu-lhe que alguém chamava por ele, voltou a cabeça e viu a pessoa do santo, agora mais celeste; já não era a imagem de madeira, era a pessoa, c"
+    },
+    {
+      "prompt": "Vinha eu de um banco, aonde fora saber notícias do câmbio. Não tenho relações diretas com o câmbio; não saco sobre Londres, nem sobre qualquer outro",
+      "referencia": " ponto da terra, que é assaz vasta, e eu demasiado pequeno. Mas tudo o que compro caro, dizem-me que é culpa do câmbio. “Que quer o senhor que eu faça com este câmbio a 9?” perguntam-me. Em vão leio os jornais; o câmbio não sobe de 9. O que faz é variar; ora é 9 1/8, ora 9 1/4, ora 9 3/8. Dorme-se com ele a 9 15/16, acorda-se a 9 3/4. Ao meio-dia está a 9 1/2. Um eterno vaivém na mesma eterna casa"
+    },
+    {
+      "prompt": "Enquanto as duas senhoras foram tratar das disposições do dia, Estácio mandou selar o cavalo e saiu. Queria comparar ainda uma vez o desenho de",
+      "referencia": " Helena com o sítio copiado. A fidelidade era completa, e o quadro seria absolutamente o mesmo, se se dessem algumas circunstâncias da primeira ocasião. Helena não ia ao lado dele; mas a vinte braças de distância flutuava a bandeira azul da casa do alpendre. Estácio afrouxou o passo do cavalo, como saboreando as recordações da primeira manhã, quando Helena se lhe mostrara tão singularmente comovid"
+    },
+    {
+      "prompt": "Nenhum tumulto nas sessões. A atenção era grande e constante. Geralmente, as galerias não eram mui freqüentadas, e, para o fim da hora, poucos",
+      "referencia": " espectadores ficavam, alguns dormiam. Naturalmente, a discussão do voto de graças e outras chamavam mais gente. Nabuco e algum outro dos principais da casa gozavam do privilégio de atrair grande auditório, quando se sabia que eles rompiam um debate ou respondiam a um discurso. Nessas ocasiões, mui excepcionalmente, eram admitidos ouvintes no próprio salão do Senado, como aliás era comum na Câmara"
+    },
+    {
+      "prompt": "Pois; senhores, nem por ter visto tantos e tamanhos algarismos pude ler friamente os do parecer da comissão. Já o Sr. senador Moraes e Barros havia",
+      "referencia": " chamado a nossa atenção para a simples conta total da dívida, que, se não anda na memória de todos os brasileiros, não é por falta de algarismos; será antes por falta de memória. Mas a memória, apesar dos pesares, não vale a imaginação, e há um meio seguro de não doerem as dividas, é imaginar que são poucas, e essas poucas fecundíssimas, não as pagando a gente, porque não quer, e ainda por se não"
+    },
+    {
+      "prompt": "D. Úrsula fez um gesto de assentimento. Chamada a ouvi-los, Helena desceu daí a alguns minutos. A cor da vergonha tingiu-lhe a face, logo que ela deu",
+      "referencia": " com Estácio, que a esperava, ao lado de Melchior, ambos calados, mas sem nenhum vislumbre de irritação. Após um silêncio longo e abafado, Estácio comunicou a Helena a resolução da família e seus sentimentos de generosidade e confiança; concluiu dizendo que, sobre todas as coisas, prevalecia a vontade derradeira de seu pai. Helena empalideceu e cerrou os olhos; D.Úrsula correu a ampará-la. O organ"
+    },
+    {
+      "prompt": "Esse espírito misericordioso é que eu quisera ver nas palavras de Máximo, a uma frase de sua filha, que maldiz o pai desconhecido, conta-lhe a",
+      "referencia": " história das suas desventuras conjugais, no ponto de vista interessado de marido; esta represália é própria do Máximo do primeiro ato, e, sobretudo do Máximo religioso? Estabelecer no espírito da moribunda um duelo de sentimentos; opor-se, nessa hora suprema, às dolorosas invenções da mãe, revelações não menos dolorosa do pai; lançar a dúvida naquela alma que se ia embora ignorante das tormentas "
+    },
+    {
+      "prompt": "A narração basta. Já lá vai a entrada de Jesus em Jerusalém, escolhida para o drama da paixão. A carreira estava acabada. Os ensinamentos do jovem",
+      "referencia": " profeta corriam as cidades e as aldeias, e todos se podiam dizer compendiados naquele sermão da montanha, que, por palavras simples e chãs, exprimia uma doutrina moral nova, a humildade e a resignação, o perdão das injúrias, o amor dos inimigos, a prece pelo que calunia e persegue, a esmola às escondidas, a oração secreta. Nessa prédica da montanha a lei e os profetas são confessados, mas a refor"
+    },
+    {
+      "prompt": "Não tinham pai nem mãe; Marcos era advogado; Emílio formara-se em medicina. Por um alto sentimento de humanidade, Emílio não exercia a profissão; o",
+      "referencia": " obituário conservava o termo médio usual. Mas, tendo um e outro herdado alguma coisa dos pais, Emílio mordia razoavelmente a parte da herança, que aliás o irmão administrava com muito zelo. Moravam juntos, mas tinham a casa dividida de maneira que não podiam tolher a liberdade um do outro. Às vezes passavam-se três ou quatro dias sem se verem; e é justo dizer que as saudades primeiro feriam Emíli"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+# Configuração do latexmk para o artigo (mesmo esquema de ~/mestrado).
+# A classe IEEEtran e o estilo IEEEtran.bst ficam nas pastas do template no
+# repositório, então os caminhos de busca são estendidos (o ':' final
+# preserva os diretórios padrão do TeX Live).
+$ENV{'TEXINPUTS'} = '../conference-latex-template/IEEE-conference-template-062824//:' . ($ENV{'TEXINPUTS'} // '');
+$ENV{'BSTINPUTS'} = '../IEEEtranBST2//:' . ($ENV{'BSTINPUTS'} // '');
+$ENV{'BIBINPUTS'} = '../IEEEtranBST2//:' . ($ENV{'BIBINPUTS'} // '');
+
+$pdf_mode  = 1;
+$pdflatex  = 'pdflatex -interaction=nonstopmode -halt-on-error -file-line-error %O %S';
+@default_files = ('artigo.tex');
+$max_repeat = 4;
+$bibtex_use = 1;
+$bibtex     = 'bibtex %O %S';

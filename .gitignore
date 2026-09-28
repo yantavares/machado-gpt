@@ -1,0 +1,34 @@
+# checkpoints e dados binários (regeneráveis)
+*.pt
+*.bin
+*.pkl
+runs_smoke/
+results_smoke/
+resultados_colab.tar.gz
+# corpus derivado grande (regenerar com python -m machado_gpt.corpus);
+# o arquivo da obra completa, que é entrega do projeto, fica versionado
+corpus/obras.jsonl
+corpus/train.txt
+corpus/val.txt
+# LaTeX
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+# Python
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+apresentacao/*.aux
+apresentacao/*.log
+apresentacao/*.nav
+apresentacao/*.out
+apresentacao/*.snm
+apresentacao/*.toc
+apresentacao/*.fdb_latexmk
+apresentacao/*.fls
+apresentacao/apresentacao-notas.*

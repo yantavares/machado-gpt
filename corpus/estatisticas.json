@@ -1,0 +1,71 @@
+{
+  "obras": 243,
+  "incluir_traducoes": false,
+  "caracteres_total": 13393592,
+  "palavras_total": 2360804,
+  "caracteres_por_split": {
+    "train": 12040545,
+    "val": 676052,
+    "test": 677183
+  },
+  "caracteres_por_genero": {
+    "conto": 5262848,
+    "crônica": 3097864,
+    "romance": 3053817,
+    "crítica": 898553,
+    "poesia": 651150,
+    "teatro": 361456,
+    "miscelânea": 67662
+  },
+  "vocabulario_chars": 144,
+  "chars_raros": {
+    "ò": 3,
+    "È": 3,
+    "ë": 3,
+    "ö": 2,
+    "ï": 1,
+    "»": 2,
+    "½": 1,
+    "û": 4,
+    "œ": 1,
+    "`": 1,
+    "ì": 1,
+    "Ë": 2,
+    "Û": 2,
+    "¡": 1
+  },
+  "duplicatas_removidas": 123,
+  "indices_removidos": 45,
+  "indices_sem_repeticao": [
+    {
+      "arquivo": "contos/macn004.txt",
+      "entradas": 20,
+      "repeticao": false,
+      "primeira": "ADVERTÊNCIA DA 1ª EDIÇÃO"
+    },
+    {
+      "arquivo": "contos/macn014.txt",
+      "entradas": 9,
+      "repeticao": false,
+      "primeira": "I - MARCELINA"
+    },
+    {
+      "arquivo": "contos/macn075.txt",
+      "entradas": 3,
+      "repeticao": false,
+      "primeira": "CAPÍTULO PRIMEIRO - ESTILO ANTITÉTICO E ASMÁTICO"
+    },
+    {
+      "arquivo": "critica/mact08.txt",
+      "entradas": 14,
+      "repeticao": false,
+      "primeira": "Parecer sobre o drama em três atos CLERMONT OU A MULHER DO ARTISTA"
+    },
+    {
+      "arquivo": "cronica/macr07.txt",
+      "entradas": 19,
+      "repeticao": false,
+      "primeira": "1° julho de 1876"
+    }
+  ]
+}

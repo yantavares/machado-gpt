@@ -1,0 +1,245 @@
+{
+  "char_baby": {
+    "treino_inicio": {
+      "quando": "19:28:10"
+    },
+    "treino_fim": {
+      "quando": "19:41:15",
+      "segundos": 784.5
+    },
+    "avaliacao_inicio": {
+      "quando": "19:41:15"
+    },
+    "avaliacao_fim": {
+      "quando": "19:41:25",
+      "bpc_test": 1.6322
+    },
+    "geracao_inicio": {
+      "quando": "19:41:25"
+    },
+    "geracao_fim": {
+      "quando": "19:42:34",
+      "palavras": 2283,
+      "palavras_validas": 0.9873,
+      "distinct_1": 0.371,
+      "distinct_2": 0.858,
+      "memorizacao_8grama": 0.0,
+      "repeticao_4grama": 0.0
+    }
+  },
+  "ptbr_zeroshot": {
+    "avaliacao_inicio": {
+      "quando": "19:42:34"
+    },
+    "avaliacao_fim": {
+      "quando": "19:43:25",
+      "bpc_test": 1.5927
+    },
+    "geracao_inicio": {
+      "quando": "19:43:25"
+    },
+    "geracao_fim": {
+      "quando": "19:44:01",
+      "palavras": 2122,
+      "palavras_validas": 0.9623,
+      "distinct_1": 0.3761,
+      "distinct_2": 0.8456,
+      "memorizacao_8grama": 0.0,
+      "repeticao_4grama": 0.0084
+    }
+  },
+  "gpt2_zeroshot": {
+    "avaliacao_inicio": {
+      "quando": "19:44:01"
+    },
+    "avaliacao_fim": {
+      "quando": "19:44:56",
+      "bpc_test": 2.8045
+    },
+    "geracao_inicio": {
+      "quando": "19:44:56"
+    },
+    "geracao_fim": {
+      "quando": "19:45:50",
+      "palavras": 2356,
+      "palavras_validas": 0.6435,
+      "distinct_1": 0.4096,
+      "distinct_2": 0.8624,
+      "memorizacao_8grama": 0.0,
+      "repeticao_4grama": 0.0238
+    }
+  },
+  "ptbr_ft": {
+    "treino_inicio": {
+      "quando": "19:45:50"
+    },
+    "treino_fim": {
+      "quando": "20:14:03",
+      "segundos": 1693.7
+    },
+    "avaliacao_inicio": {
+      "quando": "20:14:03"
+    },
+    "avaliacao_fim": {
+      "quando": "20:14:39",
+      "bpc_test": 1.3691
+    },
+    "geracao_inicio": {
+      "quando": "20:14:39"
+    },
+    "geracao_fim": {
+      "quando": "20:15:15",
+      "palavras": 2295,
+      "palavras_validas": 0.9948,
+      "distinct_1": 0.3203,
+      "distinct_2": 0.8199,
+      "memorizacao_8grama": 0.0,
+      "repeticao_4grama": 0.0091
+    }
+  },
+  "gpt2_ft": {
+    "treino_inicio": {
+      "quando": "20:15:16"
+    },
+    "treino_fim": {
+      "quando": "20:44:38",
+      "segundos": 1762.0
+    },
+    "avaliacao_inicio": {
+      "quando": "20:44:38"
+    },
+    "avaliacao_fim": {
+      "quando": "20:45:28",
+      "bpc_test": 1.7231
+    },
+    "geracao_inicio": {
+      "quando": "20:45:28"
+    },
+    "geracao_fim": {
+      "quando": "20:46:21",
+      "palavras": 2362,
+      "palavras_validas": 0.9822,
+      "distinct_1": 0.2837,
+      "distinct_2": 0.7834,
+      "memorizacao_8grama": 0.0,
+      "repeticao_4grama": 0.0123
+    }
+  },
+  "ptbr_scratch": {
+    "treino_inicio": {
+      "quando": "20:46:23"
+    },
+    "treino_fim": {
+      "quando": "21:03:47",
+      "segundos": 1043.8
+    },
+    "avaliacao_inicio": {
+      "quando": "21:03:47"
+    },
+    "avaliacao_fim": {
+      "quando": "21:04:01",
+      "bpc_test": 1.5298
+    },
+    "geracao_inicio": {
+      "quando": "21:04:01"
+    },
+    "geracao_fim": {
+      "quando": "21:04:23",
+      "palavras": 2309,
+      "palavras_validas": 0.9926,
+      "distinct_1": 0.3491,
+      "distinct_2": 0.842,
+      "memorizacao_8grama": 0.0,
+      "repeticao_4grama": 0.0018
+    }
+  },
+  "gpt2_scratch": {
+    "treino_inicio": {
+      "quando": "21:04:23"
+    },
+    "treino_fim": {
+      "quando": "21:21:09",
+      "segundos": 1005.2
+    },
+    "avaliacao_inicio": {
+      "quando": "21:21:09"
+    },
+    "avaliacao_fim": {
+      "quando": "21:21:28",
+      "bpc_test": 1.5742
+    },
+    "geracao_inicio": {
+      "quando": "21:21:28"
+    },
+    "geracao_fim": {
+      "quando": "21:21:59",
+      "palavras": 2273,
+      "palavras_validas": 0.9877,
+      "distinct_1": 0.3476,
+      "distinct_2": 0.8533,
+      "memorizacao_8grama": 0.0,
+      "repeticao_4grama": 0.0
+    }
+  },
+  "char_large": {
+    "treino_inicio": {
+      "quando": "21:21:59"
+    },
+    "treino_fim": {
+      "quando": "21:52:23",
+      "segundos": 1823.4
+    },
+    "avaliacao_inicio": {
+      "quando": "21:52:23"
+    },
+    "avaliacao_fim": {
+      "quando": "21:52:42",
+      "bpc_test": 1.5654
+    },
+    "geracao_inicio": {
+      "quando": "21:52:42"
+    },
+    "geracao_fim": {
+      "quando": "21:54:09",
+      "palavras": 2234,
+      "palavras_validas": 0.9825,
+      "distinct_1": 0.3688,
+      "distinct_2": 0.8707,
+      "memorizacao_8grama": 0.0,
+      "repeticao_4grama": 0.0
+    }
+  },
+  "video_gpt": {
+    "treino_inicio": {
+      "quando": "21:54:09"
+    },
+    "treino_fim": {
+      "quando": "22:45:58",
+      "segundos": 3108.6
+    },
+    "avaliacao_inicio": {
+      "quando": "22:45:58"
+    },
+    "avaliacao_fim": {
+      "quando": "22:46:20",
+      "bpc_test": 1.7246
+    },
+    "geracao_inicio": {
+      "quando": "22:46:20"
+    },
+    "geracao_fim": {
+      "quando": "22:52:03",
+      "palavras": 2280,
+      "palavras_validas": 0.9781,
+      "distinct_1": 0.375,
+      "distinct_2": 0.8507,
+      "memorizacao_8grama": 0.0,
+      "repeticao_4grama": 0.0
+    }
+  },
+  "_todos": {
+    "fim": {
+      "quando": "22:52:05"
+    }
+  }
+}

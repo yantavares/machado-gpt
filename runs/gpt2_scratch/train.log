@@ -1,0 +1,120 @@
+/content/proj/nanoGPT-master/train.py:199: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+Overriding config with /content/proj/experiments/configs/gpt2_scratch.py:
+# BPE do zero (autoria do aluno): mesma arquitetura do baby GPT (6/6/384,
+# contexto de 256 tokens), mas com o tokenizador BPE 'gpt2' (vocabulário de
+# 50.257). Isola o efeito do tokenizador, sem pré-treino.
+exec(open('../experiments/configs/_comum.py').read())
+out_dir = '../runs/gpt2_scratch'
+dataset = 'machado_gpt2'
+eval_interval = 250
+eval_iters = 100
+gradient_accumulation_steps = 1
+batch_size = 64
+block_size = 256
+n_layer = 6
+n_head = 6
+n_embd = 384
+dropout = 0.2
+learning_rate = 1e-3
+max_iters = 3000
+lr_decay_iters = 3000
+min_lr = 1e-4
+beta2 = 0.99
+warmup_iters = 100
+
+Overriding: out_dir = /content/proj/runs/gpt2_scratch
+tokens per iteration will be: 16,384
+Initializing a new model from scratch
+defaulting to vocab_size of GPT-2 to 50304 (50257 rounded up for efficiency)
+number of parameters: 29.94M
+num decayed parameter tensors: 26, with 30,031,872 parameters
+num non-decayed parameter tensors: 13, with 4,992 parameters
+using fused AdamW: True
+compiling the model... (takes a ~minute)
+step 0: train loss 10.9067, val loss 10.9065
+iter 0: loss 10.9124, time 21883.06ms, mfu -100.00%
+iter 50: loss 5.7968, time 251.32ms, mfu 3.90%
+iter 100: loss 4.4162, time 233.51ms, mfu 3.93%
+iter 150: loss 4.1010, time 221.77ms, mfu 3.98%
+iter 200: loss 3.9681, time 220.95ms, mfu 4.03%
+step 250: train loss 3.8235, val loss 3.8455
+saving checkpoint to /content/proj/runs/gpt2_scratch
+iter 250: loss 3.9330, time 29270.28ms, mfu 3.63%
+iter 300: loss 3.7555, time 231.69ms, mfu 3.69%
+iter 350: loss 3.7139, time 241.63ms, mfu 3.72%
+iter 400: loss 3.5521, time 236.60ms, mfu 3.77%
+iter 450: loss 3.4899, time 221.63ms, mfu 3.83%
+step 500: train loss 3.3208, val loss 3.3614
+saving checkpoint to /content/proj/runs/gpt2_scratch
+iter 500: loss 3.4817, time 24515.76ms, mfu 3.45%
+iter 550: loss 3.3928, time 226.40ms, mfu 3.54%
+iter 600: loss 3.3143, time 230.31ms, mfu 3.61%
+iter 650: loss 3.3240, time 245.59ms, mfu 3.65%
+iter 700: loss 3.2924, time 225.43ms, mfu 3.72%
+step 750: train loss 3.1019, val loss 3.1716
+saving checkpoint to /content/proj/runs/gpt2_scratch
+iter 750: loss 3.2329, time 27241.98ms, mfu 3.35%
+iter 800: loss 3.1908, time 217.59ms, mfu 3.47%
+iter 850: loss 3.1560, time 226.27ms, mfu 3.55%
+iter 900: loss 3.1255, time 242.35ms, mfu 3.60%
+iter 950: loss 3.0709, time 230.74ms, mfu 3.67%
+step 1000: train loss 2.9836, val loss 3.0677
+saving checkpoint to /content/proj/runs/gpt2_scratch
+iter 1000: loss 3.1062, time 23067.90ms, mfu 3.31%
+iter 1050: loss 3.0905, time 216.52ms, mfu 3.43%
+iter 1100: loss 3.0057, time 220.88ms, mfu 3.53%
+iter 1150: loss 3.0176, time 241.01ms, mfu 3.58%
+iter 1200: loss 3.0371, time 228.67ms, mfu 3.65%
+step 1250: train loss 2.8908, val loss 2.9984
+saving checkpoint to /content/proj/runs/gpt2_scratch
+iter 1250: loss 2.9916, time 27346.66ms, mfu 3.29%
+iter 1300: loss 3.0175, time 216.06ms, mfu 3.42%
+iter 1350: loss 2.9097, time 227.98ms, mfu 3.50%
+iter 1400: loss 3.0221, time 238.02ms, mfu 3.57%
+iter 1450: loss 2.9658, time 226.99ms, mfu 3.64%
+step 1500: train loss 2.8255, val loss 2.9440
+saving checkpoint to /content/proj/runs/gpt2_scratch
+iter 1500: loss 2.9438, time 22015.61ms, mfu 3.28%
+iter 1550: loss 2.9206, time 218.70ms, mfu 3.40%
+iter 1600: loss 2.9119, time 223.33ms, mfu 3.50%
+iter 1650: loss 2.9309, time 236.14ms, mfu 3.57%
+iter 1700: loss 2.8734, time 223.39ms, mfu 3.65%
+step 1750: train loss 2.7538, val loss 2.8891
+saving checkpoint to /content/proj/runs/gpt2_scratch
+iter 1750: loss 2.8647, time 27593.56ms, mfu 3.29%
+iter 1800: loss 2.8832, time 219.32ms, mfu 3.41%
+iter 1850: loss 2.8623, time 227.48ms, mfu 3.50%
+iter 1900: loss 2.8902, time 236.81ms, mfu 3.56%
+iter 1950: loss 2.8557, time 224.69ms, mfu 3.64%
+step 2000: train loss 2.7144, val loss 2.8575
+saving checkpoint to /content/proj/runs/gpt2_scratch
+iter 2000: loss 2.8372, time 26565.56ms, mfu 3.28%
+iter 2050: loss 2.8423, time 214.21ms, mfu 3.41%
+iter 2100: loss 2.8450, time 227.67ms, mfu 3.50%
+iter 2150: loss 2.7637, time 241.59ms, mfu 3.56%
+iter 2200: loss 2.8439, time 226.28ms, mfu 3.63%
+step 2250: train loss 2.6663, val loss 2.8262
+saving checkpoint to /content/proj/runs/gpt2_scratch
+iter 2250: loss 2.7957, time 21884.56ms, mfu 3.27%
+iter 2300: loss 2.7362, time 214.99ms, mfu 3.40%
+iter 2350: loss 2.7843, time 228.32ms, mfu 3.49%
+iter 2400: loss 2.7704, time 238.92ms, mfu 3.55%
+iter 2450: loss 2.7511, time 223.55ms, mfu 3.64%
+step 2500: train loss 2.6376, val loss 2.8100
+saving checkpoint to /content/proj/runs/gpt2_scratch
+iter 2500: loss 2.7806, time 28028.28ms, mfu 3.28%
+iter 2550: loss 2.8024, time 218.87ms, mfu 3.40%
+iter 2600: loss 2.8265, time 227.41ms, mfu 3.49%
+iter 2650: loss 2.7988, time 238.42ms, mfu 3.55%
+iter 2700: loss 2.7218, time 223.88ms, mfu 3.63%
+step 2750: train loss 2.6170, val loss 2.7934
+saving checkpoint to /content/proj/runs/gpt2_scratch
+iter 2750: loss 2.7281, time 27300.22ms, mfu 3.27%
+iter 2800: loss 2.7315, time 214.69ms, mfu 3.40%
+iter 2850: loss 2.7908, time 228.04ms, mfu 3.49%
+iter 2900: loss 2.7248, time 237.59ms, mfu 3.56%
+iter 2950: loss 2.7082, time 230.92ms, mfu 3.63%
+step 3000: train loss 2.6062, val loss 2.7785
+saving checkpoint to /content/proj/runs/gpt2_scratch
+iter 3000: loss 2.7361, time 22067.98ms, mfu 3.27%

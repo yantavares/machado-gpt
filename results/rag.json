@@ -1,0 +1,460 @@
+{
+  "recuperacao": {
+    "acerto@1": 0.35,
+    "acerto@5": 0.7,
+    "acerto@10": 0.85,
+    "obra@1": 0.7,
+    "obra@5": 0.9,
+    "obra@10": 1.0,
+    "n_perguntas": 20,
+    "detalhes": [
+      {
+        "pergunta": "Quem era o melhor amigo de Bentinho no seminário?",
+        "obra": "romance/marm08.txt",
+        "chave": "Escobar",
+        "rank_chave": 2,
+        "rank_obra": 0,
+        "top1": {
+          "titulo": "Dom Casmurro",
+          "texto": "— D. Glória, a senhora persiste na idéia de meter o nosso Bentinho no seminário? É mais que tempo, e já agora pode haver uma dificuldade.\n— Que dificuldade?\n— Uma grande dificuldade.\nMinha mãe quis saber o que era. José Dias, depois de alguns instantes de concentração, veio ver se havia alguém no co"
+        }
+      },
+      {
+        "pergunta": "Como se chamava o filho de Capitu e Bentinho?",
+        "obra": "romance/marm08.txt",
+        "chave": "Ezequiel",
+        "rank_chave": 2,
+        "rank_obra": 0,
+        "top1": {
+          "titulo": "Dom Casmurro",
+          "texto": "CAPÍTULO LXXXIV\nCHAMADO\nNo saguão e na rua, examinei ainda comigo se efetivamente ele teria desconfiado alguma coisa, mas achei que não e pus-me a andar. Ia satisfeito com a visita, com a alegria de Capitu, com os louvores de Gurgel, a tal ponto que não acudi logo a uma voz que me chamava:\n— Sr. Ben"
+        }
+      },
+      {
+        "pergunta": "Onde Bento Santiago mandou construir a casa em que mora?",
+        "obra": "romance/marm08.txt",
+        "chave": "Engenho Novo",
+        "rank_chave": null,
+        "rank_obra": 6,
+        "top1": {
+          "titulo": "Papéis Avulsos",
+          "texto": "Cinco meses depois, deu-se um pequeno incidente na família. D. Benedita mandara construir uma casa no caminho da Tijuca, e o genro, com o pretexto de uma interrupção na obra, propôs acabá-la. D. Benedita consentiu, e o ato era tanto mais honroso para ela, quanto que o genro começava a parecer-lhe in"
+        }
+      },
+      {
+        "pergunta": "A quem Brás Cubas dedica as suas memórias póstumas?",
+        "obra": "romance/marm05.txt",
+        "chave": "verme",
+        "rank_chave": 0,
+        "rank_obra": 0,
+        "top1": {
+          "titulo": "Memórias Póstumas de Brás Cubas",
+          "texto": "Memórias Póstumas de Brás Cubas\nAo verme que primeiro roeu as frias carnes do meu cadáver\ndedico como saudosa lembrança\nestas Memórias Póstumas\nPrólogo da terceira edição\nA primeira edição destas Memórias Póstumas de Brás Cubas foi feita aos pedaços na Revista Brasileira, pelos anos de 1880. Postas "
+        }
+      },
+      {
+        "pergunta": "Que remédio Brás Cubas queria inventar para aliviar a melancolia da humanidade?",
+        "obra": "romance/marm05.txt",
+        "chave": "emplasto",
+        "rank_chave": 5,
+        "rank_obra": 0,
+        "top1": {
+          "titulo": "Memórias Póstumas de Brás Cubas",
+          "texto": "CAPÍTULO LV / O VELHO DIÁLOGO DE ADÃO E EVA\nBRÁS CUBAS................................?\nVIRGÍLIA...............................\nBRÁS CUBAS................................................................................................\n........................................................\nVIRGÍLIA"
+        }
+      },
+      {
+        "pergunta": "Qual é a filosofia criada por Quincas Borba?",
+        "obra": "romance/marm05.txt",
+        "chave": "Humanitismo",
+        "rank_chave": 8,
+        "rank_obra": 2,
+        "top1": {
+          "titulo": "Quincas Borba",
+          "texto": "— E o cachorro? perguntou D. Fernanda ao criado.\n— Está preso no quarto, lá dentro.\n— Vá buscá-lo.\nQuincas Borba apareceu. Magro, abatido, parou à porta da sala, estranhando as duas senhoras, mas sem latir; mal erguia os olhos apagados. Ia a dar meia-volta ao corpo na direção do interior da casa, qu"
+        }
+      },
+      {
+        "pergunta": "Por quem Rubião se apaixona no Rio de Janeiro?",
+        "obra": "romance/marm07.txt",
+        "chave": "Sofia",
+        "rank_chave": null,
+        "rank_obra": 3,
+        "top1": {
+          "titulo": "Papéis Avulsos",
+          "texto": "— Consinto que vás dar um passeio ao Rio de Janeiro.\nD. Evarista sentiu faltar-lhe o chão debaixo dos pés. Nunca dos nuncas vira o Rio de Janeiro, que posto não fosse sequer uma pálida sombra do que hoje é, todavia era alguma coisa mais do que Itaguaí. Ver o Rio de Janeiro, para ela, equivalia ao so"
+        }
+      },
+      {
+        "pergunta": "Qual o nome do médico que funda o hospício em O Alienista?",
+        "obra": "contos/macn003.txt",
+        "chave": "Bacamarte",
+        "rank_chave": 0,
+        "rank_obra": 0,
+        "top1": {
+          "titulo": "Papéis Avulsos",
+          "texto": "Nisto entrou na vila uma força mandada pelo vice-rei, e restabeleceu a ordem. O alienista exigiu desde logo a entrega do barbeiro Porfírio, e bem assim a de uns cinqüenta e tantos indivíduos, que declarou mentecaptos; e não só lhe deram esses, como afiançaram entregar-lhe mais dezenove sequazes do b"
+        }
+      },
+      {
+        "pergunta": "Qual era o posto militar de Jacobina no conto O Espelho?",
+        "obra": "contos/macn003.txt",
+        "chave": "alferes",
+        "rank_chave": null,
+        "rank_obra": 3,
+        "top1": {
+          "titulo": "Valério",
+          "texto": "— Sempre queria vê-lo dançar, coronel!\n— Qual! já não é para mim.\n— Como se chama o opúsculo? perguntou o militar.\n— Não sei se devo confiar tanta coisa; o autor não me autorizou... mas... é verdade que daqui uma semana... chama-se o opúsculo: Abaixo as máscaras!\n— Magnífico! magnífico título! excla"
+        }
+      },
+      {
+        "pergunta": "Quem sente prazer com o sofrimento alheio em A Causa Secreta?",
+        "obra": "contos/macn005.txt",
+        "chave": "Fortunato",
+        "rank_chave": 6,
+        "rank_obra": 6,
+        "top1": {
+          "titulo": "Histórias Sem Data",
+          "texto": "Não se deteve um instante. O pasmo não lhe deu tempo de refletir, comparar e concluir do espetáculo presente alguma coisa análoga ao passado. Voou de novo ao céu, trêmulo de raiva, ansioso de conhecer a causa secreta de tão singular fenômeno. Deus ouviu-o com infinita complacência; não o interrompeu"
+        }
+      },
+      {
+        "pergunta": "Quem vai consultar a cartomante com medo de ser descoberto?",
+        "obra": "contos/macn005.txt",
+        "chave": "Camilo",
+        "rank_chave": 0,
+        "rank_obra": 0,
+        "top1": {
+          "titulo": "Várias Histórias",
+          "texto": "M. DE A.\nA CARTOMANTE\nHamlet observa a Horácio que há mais coisas no céu e na terra do que sonha a nossa filosofia. Era a mesma explicação que dava a bela Rita ao moço Camilo, numa sexta-feira de novembro de 1869, quando este ria dela, por ter ido na véspera consultar uma cartomante; a diferença é q"
+        }
+      },
+      {
+        "pergunta": "Com quem Nogueira conversa na noite de Natal em Missa do Galo?",
+        "obra": "contos/macn006.txt",
+        "chave": "Conceição",
+        "rank_chave": 1,
+        "rank_obra": 0,
+        "top1": {
+          "titulo": "Páginas Recolhidas",
+          "texto": "Cheguei ao Hotel de Estrangeiros ao declinar da tarde. Minha mulher esperava-me para jantar. Eu, ao entrar no quarto, peguei-lhe das mãos, e perguntei-lhe:\n— O que é eterno, Iaiá Lindinha?\nEla, suspirando:\n— Ingrato! é o amor que te tenho.\nJantei sem remorsos; ao contrário, tranqüilo e jovial. Coisa"
+        }
+      },
+      {
+        "pergunta": "Qual é o ofício de Cândido Neves em Pai contra mãe?",
+        "obra": "contos/macn007.txt",
+        "chave": "escravos fugidos",
+        "rank_chave": 2,
+        "rank_obra": 0,
+        "top1": {
+          "titulo": "Relíquias de Casa Velha",
+          "texto": "— Aqui está a fujona, disse Cândido Neves.\n— É ela mesma.\n— Meu senhor!\n— Anda, entra...\nArminda caiu no corredor. Ali mesmo o senhor da escrava abriu a carteira e tirou os cem mil-réis de gratificação. Cândido Neves guardou as duas notas de cinqüenta mil-réis, enquanto o senhor novamente dizia à es"
+        }
+      },
+      {
+        "pergunta": "Como se chamam os gêmeos rivais filhos de Natividade?",
+        "obra": "romance/marm09.txt",
+        "chave": "Pedro",
+        "rank_chave": 3,
+        "rank_obra": 0,
+        "top1": {
+          "titulo": "Esaú e Jacó",
+          "texto": "Chegaram a acordo. Eles subiriam aos sábados e desceriam às segundas; o mesmo por ocasião de dias santos e festas de gala. Natividade contava com o costume e as atrações.\nNa barca e em Petrópolis era objeto de conversação a diferença entre os filhos, que só iam lá uma vez por semana, e o pai, que tr"
+        }
+      },
+      {
+        "pergunta": "Quem é a madrasta de Iaiá Garcia?",
+        "obra": "romance/marm04.txt",
+        "chave": "Estela",
+        "rank_chave": 0,
+        "rank_obra": 0,
+        "top1": {
+          "titulo": "Iaiá Garcia",
+          "texto": "— É um celibatário necessitado da companhia de mulheres, disse consigo.\nProcópio Dias não parecia outra coisa; a atmosfera feminina era para ele uma necessidade; o ruge-ruge das saias a melhor música a seus ouvidos. Graças à idade, Iaiá era mais familiar do que Estela; às vezes chegava a \"judiar\" co"
+        }
+      },
+      {
+        "pergunta": "Quem é o diplomata aposentado que escreve o diário de 1888 e 1889?",
+        "obra": "romance/marm10.txt",
+        "chave": "Aires",
+        "rank_chave": 0,
+        "rank_obra": 0,
+        "top1": {
+          "titulo": "Memorial de Aires",
+          "texto": "Memorial de Aires\nEm Lixboa, sobre lo mar, Barcas novas mandey lavrar...\nCantiga de Joham Zorro.\nPara veer meu amigo Que talhou preyto comigo, Alá vou, madre. Para veer meu amado Que mig’a preyto talhado, Alá vou, madre.\nCantiga d’el rei Dom Denis.\nAdvertência\nQuem me leu Esaú e Jacó talvez reconheç"
+        }
+      },
+      {
+        "pergunta": "Como se chama a filha natural que o Conselheiro Vale reconhece em testamento?",
+        "obra": "romance/marm03.txt",
+        "chave": "Helena",
+        "rank_chave": 0,
+        "rank_obra": 0,
+        "top1": {
+          "titulo": "Helena",
+          "texto": "CAPÍTULO II\nNo dia seguinte, foi aberto o testamento com todas as formalidades legais. O conselheiro nomeava testamenteiros Estácio, o Dr. Camargo e o Padre Melchior. As disposições gerais nada tinham que fosse notável: eram legados pios ou beneficentes, lembranças a amigos, dotes a afilhados, missa"
+        }
+      },
+      {
+        "pergunta": "Em que vila Simão Bacamarte abre a Casa Verde?",
+        "obra": "contos/macn003.txt",
+        "chave": "Itaguaí",
+        "rank_chave": 3,
+        "rank_obra": 0,
+        "top1": {
+          "titulo": "Papéis Avulsos",
+          "texto": "Compreende-se que, pela teoria nova, não bastava um fato ou um dito, para recolher alguém à Casa Verde; era preciso um longo exame, um vasto inquérito do passado e do presente. O Padre Lopes, por exemplo, só foi capturado trinta dias depois da postura, a mulher do boticário quarenta dias. A reclusão"
+        }
+      },
+      {
+        "pergunta": "Que ofício o pai recomenda a Janjão quando ele completa vinte e um anos?",
+        "obra": "contos/macn003.txt",
+        "chave": "medalhão",
+        "rank_chave": 2,
+        "rank_obra": 2,
+        "top1": {
+          "titulo": "A semana",
+          "texto": "Outra festa, não propriamente a primeira em data ou lustre, mas em interesse cá da casa, foi o aniversário da Gazeta de Notícias. Completou os seus vinte anos. Vinte anos é alguma coisa na vida de um jornal qualquer, mas na da Gazeta é uma longa página da história do Jornalismo. O Jornal do Comércio"
+        }
+      },
+      {
+        "pergunta": "Como José Dias descreve os olhos de Capitu?",
+        "obra": "romance/marm08.txt",
+        "chave": "oblíqua",
+        "rank_chave": 0,
+        "rank_obra": 0,
+        "top1": {
+          "titulo": "Dom Casmurro",
+          "texto": "— Teimo; hoje mesmo ele há de falar.\n— Você jura?\n— Juro! Deixe ver os olhos, Capitu.\nTinha-me lembrado a definição que José Dias dera deles, 'olhos de cigana oblíqua e dissimulada.' Eu não sabia o que era oblíqua, mas dissimulada sabia, e queria ver se podiam chamar assim. Capitu deixou-se fitar e "
+        }
+      }
+    ]
+  },
+  "geracao": {
+    "modelo": "runs/ptbr_ft",
+    "acertos": 1,
+    "respostas": [
+      {
+        "pergunta": "Quem era o melhor amigo de Bentinho no seminário?",
+        "fontes": [
+          "Dom Casmurro (1899)",
+          "Dom Casmurro (1899)",
+          "Dom Casmurro (1899)"
+        ],
+        "resposta": "— Um amigo de meu pai.",
+        "contem_chave": false,
+        "chave_no_prompt": false
+      },
+      {
+        "pergunta": "Como se chamava o filho de Capitu e Bentinho?",
+        "fontes": [
+          "Dom Casmurro (1899)",
+          "Dom Casmurro (1899)",
+          "Dom Casmurro (1899)"
+        ],
+        "resposta": "Não, senhor; não é nada; é um homem que não tem a cabeça, e não tem a alma.",
+        "contem_chave": false,
+        "chave_no_prompt": false
+      },
+      {
+        "pergunta": "Onde Bento Santiago mandou construir a casa em que mora?",
+        "fontes": [
+          "Papéis Avulsos (1882)",
+          "Papéis Avulsos (1882)",
+          "A melhor das noivas (1877)"
+        ],
+        "resposta": "— Não há de ser, disse ele.",
+        "contem_chave": false,
+        "chave_no_prompt": false
+      },
+      {
+        "pergunta": "A quem Brás Cubas dedica as suas memórias póstumas?",
+        "fontes": [
+          "Memórias Póstumas de Brás Cubas (1880)",
+          "Memórias Póstumas de Brás Cubas (1880)",
+          "Memórias Póstumas de Brás Cubas (1880)"
+        ],
+        "resposta": "Não.",
+        "contem_chave": false,
+        "chave_no_prompt": true
+      },
+      {
+        "pergunta": "Que remédio Brás Cubas queria inventar para aliviar a melancolia da humanidade?",
+        "fontes": [
+          "Memórias Póstumas de Brás Cubas (1880)",
+          "Memórias Póstumas de Brás Cubas (1880)",
+          "Memórias Póstumas de Brás Cubas (1880)"
+        ],
+        "resposta": "Não, não; não é preciso; é preciso que o senhor não me explique a causa do amor que me fez.",
+        "contem_chave": false,
+        "chave_no_prompt": false
+      },
+      {
+        "pergunta": "Qual é a filosofia criada por Quincas Borba?",
+        "fontes": [
+          "Quincas Borba (1891)",
+          "Quincas Borba (1891)",
+          "Memórias Póstumas de Brás Cubas (1880)"
+        ],
+        "resposta": "— É a mesma.",
+        "contem_chave": false,
+        "chave_no_prompt": false
+      },
+      {
+        "pergunta": "Por quem Rubião se apaixona no Rio de Janeiro?",
+        "fontes": [
+          "Papéis Avulsos (1882)",
+          "Esaú e Jacó (1904)",
+          "Crônicas do Dr. Semana (1861)"
+        ],
+        "resposta": "— Não; é o que eu quero dizer.",
+        "contem_chave": false,
+        "chave_no_prompt": false
+      },
+      {
+        "pergunta": "Qual o nome do médico que funda o hospício em O Alienista?",
+        "fontes": [
+          "Papéis Avulsos (1882)",
+          "Ao Acaso (Crônicas da Semana) (1864)",
+          "Papéis Avulsos (1882)"
+        ],
+        "resposta": "Não, senhor; é o Dr. Simão Bacamarte.",
+        "contem_chave": true,
+        "chave_no_prompt": true
+      },
+      {
+        "pergunta": "Qual era o posto militar de Jacobina no conto O Espelho?",
+        "fontes": [
+          "Valério (1874)",
+          "Notas semanais (1878)",
+          "Esaú e Jacó (1904)"
+        ],
+        "resposta": "Não sei; mas a minha idéia é que o papel de Jacobina era uma das mais belas do livro, e que o papel de Jacó era um dos mais belos do livro.",
+        "contem_chave": false,
+        "chave_no_prompt": false
+      },
+      {
+        "pergunta": "Quem sente prazer com o sofrimento alheio em A Causa Secreta?",
+        "fontes": [
+          "Histórias Sem Data (1884)",
+          "L. L. Fernandes Pinheiro Júnior: Tipos e quadros (1886)",
+          "Memorial de Aires (1908)"
+        ],
+        "resposta": "Não.",
+        "contem_chave": false,
+        "chave_no_prompt": false
+      },
+      {
+        "pergunta": "Quem vai consultar a cartomante com medo de ser descoberto?",
+        "fontes": [
+          "Várias Histórias (1896)",
+          "Várias Histórias (1896)",
+          "Várias Histórias (1896)"
+        ],
+        "resposta": "— Não; não é preciso; eu não posso.",
+        "contem_chave": false,
+        "chave_no_prompt": true
+      },
+      {
+        "pergunta": "Com quem Nogueira conversa na noite de Natal em Missa do Galo?",
+        "fontes": [
+          "Páginas Recolhidas (1899)",
+          "Páginas Recolhidas (1899)",
+          "Páginas Recolhidas (1899)"
+        ],
+        "resposta": "— Um amigo meu.",
+        "contem_chave": false,
+        "chave_no_prompt": true
+      },
+      {
+        "pergunta": "Qual é o ofício de Cândido Neves em Pai contra mãe?",
+        "fontes": [
+          "Relíquias de Casa Velha (1906)",
+          "Relíquias de Casa Velha (1906)",
+          "Relíquias de Casa Velha (1906)"
+        ],
+        "resposta": "Não sei; mas é o que eu quero dizer.",
+        "contem_chave": false,
+        "chave_no_prompt": false
+      },
+      {
+        "pergunta": "Como se chamam os gêmeos rivais filhos de Natividade?",
+        "fontes": [
+          "Esaú e Jacó (1904)",
+          "Esaú e Jacó (1904)",
+          "Esaú e Jacó (1904)"
+        ],
+        "resposta": "Não.",
+        "contem_chave": false,
+        "chave_no_prompt": false
+      },
+      {
+        "pergunta": "Quem é a madrasta de Iaiá Garcia?",
+        "fontes": [
+          "Iaiá Garcia (1878)",
+          "Iaiá Garcia (1878)",
+          "Iaiá Garcia (1878)"
+        ],
+        "resposta": "Não é, é a senhora dos meus pensamentos.",
+        "contem_chave": false,
+        "chave_no_prompt": true
+      },
+      {
+        "pergunta": "Quem é o diplomata aposentado que escreve o diário de 1888 e 1889?",
+        "fontes": [
+          "Memorial de Aires (1908)",
+          "A semana (1892)",
+          "A vida eterna (1870)"
+        ],
+        "resposta": "Eu, o diplomata aposentado.",
+        "contem_chave": false,
+        "chave_no_prompt": true
+      },
+      {
+        "pergunta": "Como se chama a filha natural que o Conselheiro Vale reconhece em testamento?",
+        "fontes": [
+          "Helena (1876)",
+          "Helena (1876)",
+          "Helena (1876)"
+        ],
+        "resposta": "Não.",
+        "contem_chave": false,
+        "chave_no_prompt": true
+      },
+      {
+        "pergunta": "Em que vila Simão Bacamarte abre a Casa Verde?",
+        "fontes": [
+          "Papéis Avulsos (1882)",
+          "Papéis Avulsos (1882)",
+          "Papéis Avulsos (1882)"
+        ],
+        "resposta": "Não, não; não é uma casa de família.",
+        "contem_chave": false,
+        "chave_no_prompt": false
+      },
+      {
+        "pergunta": "Que ofício o pai recomenda a Janjão quando ele completa vinte e um anos?",
+        "fontes": [
+          "A semana (1892)",
+          "Vinte Anos! Vinte Anos! (1884)",
+          "Papéis Avulsos (1882)"
+        ],
+        "resposta": "— Não, senhor; é um ofício que não tem a natureza de uma profissão.",
+        "contem_chave": false,
+        "chave_no_prompt": false
+      },
+      {
+        "pergunta": "Como José Dias descreve os olhos de Capitu?",
+        "fontes": [
+          "Dom Casmurro (1899)",
+          "Dom Casmurro (1899)",
+          "Dom Casmurro (1899)"
+        ],
+        "resposta": "Não, senhor; não é possível; mas, se o senhor é um homem, é possível que a idéia de Capitu seja uma idéia de um homem.",
+        "contem_chave": false,
+        "chave_no_prompt": true
+      }
+    ],
+    "chave_no_prompt": 8
+  }
+}

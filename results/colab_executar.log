@@ -1,0 +1,93 @@
+[executar] char_baby: treino_inicio 
+[executar] char_baby: treino_fim {'segundos': 784.5}
+[executar] char_baby: avaliacao_inicio 
+number of parameters: 10.68M
+[char_baby] val: bpc=1.6325 ppl_palavra=625.1
+[char_baby] test: bpc=1.6322 ppl_palavra=621.1
+[executar] char_baby: avaliacao_fim {'bpc_test': 1.6322}
+[executar] char_baby: geracao_inicio 
+[executar] char_baby: geracao_fim {'palavras': 2283, 'palavras_validas': 0.9873, 'distinct_1': 0.371, 'distinct_2': 0.858, 'memorizacao_8grama': 0.0, 'repeticao_4grama': 0.0}
+[executar] ptbr_zeroshot: avaliacao_inicio 
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+loading weights from pretrained gpt: pierreguillou/gpt2-small-portuguese
+config from checkpoint: {'n_layer': 12, 'n_head': 12, 'n_embd': 768, 'vocab_size': 50257, 'block_size': 1024, 'bias': True}
+overriding dropout rate to 0.0
+number of parameters: 123.65M
+Loading weights:   0%|          | 0/149 [00:00<?, ?it/s]Loading weights: 100%|██████████| 149/149 [00:00<00:00, 22835.11it/s]
+[transformers] [1mGPT2LMHeadModel LOAD REPORT[0m from: pierreguillou/gpt2-small-portuguese
+Key                                     | Status     |  | 
+----------------------------------------+------------+--+-
+transformer.h.{0...11}.attn.masked_bias | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[ptbr_zeroshot] val: bpc=1.5924 ppl_palavra=533.7
+[ptbr_zeroshot] test: bpc=1.5927 ppl_palavra=531.6
+[executar] ptbr_zeroshot: avaliacao_fim {'bpc_test': 1.5927}
+[executar] ptbr_zeroshot: geracao_inicio 
+[executar] ptbr_zeroshot: geracao_fim {'palavras': 2122, 'palavras_validas': 0.9623, 'distinct_1': 0.3761, 'distinct_2': 0.8456, 'memorizacao_8grama': 0.0, 'repeticao_4grama': 0.0084}
+[executar] gpt2_zeroshot: avaliacao_inicio 
+loading weights from pretrained gpt: gpt2
+forcing vocab_size=50257, block_size=1024, bias=True
+overriding dropout rate to 0.0
+number of parameters: 123.65M
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 9295.83it/s]
+[gpt2_zeroshot] val: bpc=2.8015 ppl_palavra=62809.1
+[gpt2_zeroshot] test: bpc=2.8045 ppl_palavra=63001.0
+[executar] gpt2_zeroshot: avaliacao_fim {'bpc_test': 2.8045}
+[executar] gpt2_zeroshot: geracao_inicio 
+[executar] gpt2_zeroshot: geracao_fim {'palavras': 2356, 'palavras_validas': 0.6435, 'distinct_1': 0.4096, 'distinct_2': 0.8624, 'memorizacao_8grama': 0.0, 'repeticao_4grama': 0.0238}
+[executar] ptbr_ft: treino_inicio 
+[executar] ptbr_ft: treino_fim {'segundos': 1693.7}
+[executar] ptbr_ft: avaliacao_inicio 
+number of parameters: 123.65M
+[ptbr_ft] val: bpc=1.3699 ppl_palavra=221.9
+[ptbr_ft] test: bpc=1.3691 ppl_palavra=220.3
+[executar] ptbr_ft: avaliacao_fim {'bpc_test': 1.3691}
+[executar] ptbr_ft: geracao_inicio 
+[executar] ptbr_ft: geracao_fim {'palavras': 2295, 'palavras_validas': 0.9948, 'distinct_1': 0.3203, 'distinct_2': 0.8199, 'memorizacao_8grama': 0.0, 'repeticao_4grama': 0.0091}
+[executar] gpt2_ft: treino_inicio 
+[executar] gpt2_ft: treino_fim {'segundos': 1762.0}
+[executar] gpt2_ft: avaliacao_inicio 
+number of parameters: 123.65M
+[gpt2_ft] val: bpc=1.7241 ppl_palavra=897.1
+[gpt2_ft] test: bpc=1.7231 ppl_palavra=888.8
+[executar] gpt2_ft: avaliacao_fim {'bpc_test': 1.7231}
+[executar] gpt2_ft: geracao_inicio 
+[executar] gpt2_ft: geracao_fim {'palavras': 2362, 'palavras_validas': 0.9822, 'distinct_1': 0.2837, 'distinct_2': 0.7834, 'memorizacao_8grama': 0.0, 'repeticao_4grama': 0.0123}
+[executar] ptbr_scratch: treino_inicio 
+[executar] ptbr_scratch: treino_fim {'segundos': 1043.8}
+[executar] ptbr_scratch: avaliacao_inicio 
+number of parameters: 29.94M
+[ptbr_scratch] val: bpc=1.5265 ppl_palavra=411.4
+[ptbr_scratch] test: bpc=1.5298 ppl_palavra=415.0
+[executar] ptbr_scratch: avaliacao_fim {'bpc_test': 1.5298}
+[executar] ptbr_scratch: geracao_inicio 
+[executar] ptbr_scratch: geracao_fim {'palavras': 2309, 'palavras_validas': 0.9926, 'distinct_1': 0.3491, 'distinct_2': 0.842, 'memorizacao_8grama': 0.0, 'repeticao_4grama': 0.0018}
+[executar] gpt2_scratch: treino_inicio 
+[executar] gpt2_scratch: treino_fim {'segundos': 1005.2}
+[executar] gpt2_scratch: avaliacao_inicio 
+number of parameters: 29.94M
+[gpt2_scratch] val: bpc=1.5718 ppl_palavra=492.0
+[gpt2_scratch] test: bpc=1.5742 ppl_palavra=494.3
+[executar] gpt2_scratch: avaliacao_fim {'bpc_test': 1.5742}
+[executar] gpt2_scratch: geracao_inicio 
+[executar] gpt2_scratch: geracao_fim {'palavras': 2273, 'palavras_validas': 0.9877, 'distinct_1': 0.3476, 'distinct_2': 0.8533, 'memorizacao_8grama': 0.0, 'repeticao_4grama': 0.0}
+[executar] char_large: treino_inicio 
+[executar] char_large: treino_fim {'segundos': 1823.4}
+[executar] char_large: avaliacao_inicio 
+number of parameters: 25.25M
+[char_large] val: bpc=1.5626 ppl_palavra=474.4
+[char_large] test: bpc=1.5654 ppl_palavra=477.5
+[executar] char_large: avaliacao_fim {'bpc_test': 1.5654}
+[executar] char_large: geracao_inicio 
+[executar] char_large: geracao_fim {'palavras': 2234, 'palavras_validas': 0.9825, 'distinct_1': 0.3688, 'distinct_2': 0.8707, 'memorizacao_8grama': 0.0, 'repeticao_4grama': 0.0}
+[executar] video_gpt: treino_inicio 
+[executar] video_gpt: treino_fim {'segundos': 3108.6}
+[executar] video_gpt: avaliacao_inicio 
+[video_gpt] val: bpc=1.7238 ppl_palavra=895.9
+[video_gpt] test: bpc=1.7246 ppl_palavra=894.1
+[executar] video_gpt: avaliacao_fim {'bpc_test': 1.7246}
+[executar] video_gpt: geracao_inicio 
+[executar] video_gpt: geracao_fim {'palavras': 2280, 'palavras_validas': 0.9781, 'distinct_1': 0.375, 'distinct_2': 0.8507, 'memorizacao_8grama': 0.0, 'repeticao_4grama': 0.0}
+[executar] _todos: fim 

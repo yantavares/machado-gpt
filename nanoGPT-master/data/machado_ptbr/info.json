@@ -1,0 +1,22 @@
+{
+  "tokenizador": {
+    "tipo": "hf",
+    "nome": "pierreguillou/gpt2-small-portuguese"
+  },
+  "vocab_size": 50257,
+  "train": {
+    "tokens": 3001003,
+    "caracteres": 12040545,
+    "caracteres_por_token": 4.0122
+  },
+  "val": {
+    "tokens": 167860,
+    "caracteres": 676052,
+    "caracteres_por_token": 4.0275
+  },
+  "test": {
+    "tokens": 168251,
+    "caracteres": 677183,
+    "caracteres_por_token": 4.0248
+  }
+}

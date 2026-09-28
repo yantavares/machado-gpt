@@ -1,0 +1,204 @@
+/content/proj/nanoGPT-master/train.py:199: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+W0926 21:22:11.279000 29825 torch/_inductor/utils.py:1731] [0/0] Not enough SMs to use max_autotune_gemm mode
+Overriding config with /content/proj/experiments/configs/char_large.py:
+# Char-level maior (autoria do aluno): 8 camadas, 512 dimensões, contexto de
+# 512 caracteres (~25M parâmetros). Mesmo número de tokens por iteração do
+# baby GPT (32 x 512 = 64 x 256).
+exec(open('../experiments/configs/_comum.py').read())
+out_dir = '../runs/char_large'
+dataset = 'machado_char'
+eval_interval = 250
+eval_iters = 100
+gradient_accumulation_steps = 1
+batch_size = 32
+block_size = 512
+n_layer = 8
+n_head = 8
+n_embd = 512
+dropout = 0.2
+learning_rate = 6e-4
+max_iters = 6000
+lr_decay_iters = 6000
+min_lr = 6e-5
+beta2 = 0.99
+warmup_iters = 200
+
+Overriding: out_dir = /content/proj/runs/char_large
+tokens per iteration will be: 16,384
+found vocab_size = 144 (inside data/machado_char/meta.pkl)
+Initializing a new model from scratch
+number of parameters: 25.25M
+num decayed parameter tensors: 34, with 25,501,696 parameters
+num non-decayed parameter tensors: 17, with 8,704 parameters
+using fused AdamW: True
+compiling the model... (takes a ~minute)
+step 0: train loss 5.0047, val loss 5.0032
+iter 0: loss 5.0314, time 46487.87ms, mfu -100.00%
+iter 50: loss 2.5162, time 215.57ms, mfu 4.30%
+iter 100: loss 2.4035, time 228.77ms, mfu 4.28%
+iter 150: loss 2.4060, time 222.37ms, mfu 4.27%
+iter 200: loss 2.3870, time 216.23ms, mfu 4.27%
+step 250: train loss 2.3621, val loss 2.3569
+saving checkpoint to /content/proj/runs/char_large
+iter 250: loss 2.3671, time 20437.24ms, mfu 3.85%
+iter 300: loss 2.3559, time 210.28ms, mfu 3.90%
+iter 350: loss 2.2847, time 221.03ms, mfu 3.93%
+iter 400: loss 2.2000, time 229.38ms, mfu 3.94%
+iter 450: loss 2.0564, time 218.20ms, mfu 3.98%
+step 500: train loss 1.9426, val loss 1.9406
+saving checkpoint to /content/proj/runs/char_large
+iter 500: loss 2.0081, time 20750.31ms, mfu 3.58%
+iter 550: loss 1.9204, time 208.41ms, mfu 3.67%
+iter 600: loss 1.8549, time 216.13ms, mfu 3.73%
+iter 650: loss 1.8124, time 229.28ms, mfu 3.76%
+iter 700: loss 1.6993, time 218.98ms, mfu 3.81%
+step 750: train loss 1.6037, val loss 1.6026
+saving checkpoint to /content/proj/runs/char_large
+iter 750: loss 1.6907, time 24848.07ms, mfu 3.43%
+iter 800: loss 1.6025, time 207.69ms, mfu 3.54%
+iter 850: loss 1.5697, time 216.32ms, mfu 3.61%
+iter 900: loss 1.5600, time 226.54ms, mfu 3.66%
+iter 950: loss 1.5366, time 223.34ms, mfu 3.71%
+step 1000: train loss 1.4437, val loss 1.4447
+saving checkpoint to /content/proj/runs/char_large
+iter 1000: loss 1.5216, time 19834.25ms, mfu 3.34%
+iter 1050: loss 1.4504, time 207.59ms, mfu 3.46%
+iter 1100: loss 1.5286, time 216.03ms, mfu 3.54%
+iter 1150: loss 1.4604, time 227.23ms, mfu 3.59%
+iter 1200: loss 1.3983, time 220.90ms, mfu 3.65%
+step 1250: train loss 1.3536, val loss 1.3565
+saving checkpoint to /content/proj/runs/char_large
+iter 1250: loss 1.3914, time 20952.48ms, mfu 3.29%
+iter 1300: loss 1.4307, time 209.67ms, mfu 3.41%
+iter 1350: loss 1.3912, time 219.06ms, mfu 3.49%
+iter 1400: loss 1.4113, time 227.25ms, mfu 3.55%
+iter 1450: loss 1.3848, time 223.21ms, mfu 3.61%
+step 1500: train loss 1.3062, val loss 1.3122
+saving checkpoint to /content/proj/runs/char_large
+iter 1500: loss 1.3833, time 19944.42ms, mfu 3.25%
+iter 1550: loss 1.3641, time 204.55ms, mfu 3.38%
+iter 1600: loss 1.3364, time 216.63ms, mfu 3.47%
+iter 1650: loss 1.3311, time 225.86ms, mfu 3.53%
+iter 1700: loss 1.3209, time 221.73ms, mfu 3.60%
+step 1750: train loss 1.2681, val loss 1.2730
+saving checkpoint to /content/proj/runs/char_large
+iter 1750: loss 1.3299, time 20303.70ms, mfu 3.24%
+iter 1800: loss 1.3075, time 207.64ms, mfu 3.37%
+iter 1850: loss 1.2807, time 215.17ms, mfu 3.46%
+iter 1900: loss 1.2611, time 228.70ms, mfu 3.52%
+iter 1950: loss 1.2804, time 219.53ms, mfu 3.59%
+step 2000: train loss 1.2356, val loss 1.2508
+saving checkpoint to /content/proj/runs/char_large
+iter 2000: loss 1.2768, time 20295.71ms, mfu 3.24%
+iter 2050: loss 1.2640, time 208.67ms, mfu 3.36%
+iter 2100: loss 1.2645, time 217.41ms, mfu 3.45%
+iter 2150: loss 1.3108, time 225.79ms, mfu 3.51%
+iter 2200: loss 1.2755, time 219.89ms, mfu 3.58%
+step 2250: train loss 1.2193, val loss 1.2288
+saving checkpoint to /content/proj/runs/char_large
+iter 2250: loss 1.2379, time 20271.15ms, mfu 3.23%
+iter 2300: loss 1.2490, time 211.06ms, mfu 3.35%
+iter 2350: loss 1.2379, time 218.89ms, mfu 3.44%
+iter 2400: loss 1.2387, time 225.52ms, mfu 3.50%
+iter 2450: loss 1.2159, time 219.15ms, mfu 3.58%
+step 2500: train loss 1.1930, val loss 1.2086
+saving checkpoint to /content/proj/runs/char_large
+iter 2500: loss 1.2034, time 20242.14ms, mfu 3.22%
+iter 2550: loss 1.2519, time 206.59ms, mfu 3.35%
+iter 2600: loss 1.2788, time 216.98ms, mfu 3.44%
+iter 2650: loss 1.1816, time 224.76ms, mfu 3.51%
+iter 2700: loss 1.2066, time 220.35ms, mfu 3.58%
+step 2750: train loss 1.1786, val loss 1.1936
+saving checkpoint to /content/proj/runs/char_large
+iter 2750: loss 1.2433, time 20303.71ms, mfu 3.23%
+iter 2800: loss 1.2333, time 204.29ms, mfu 3.36%
+iter 2850: loss 1.2173, time 219.27ms, mfu 3.45%
+iter 2900: loss 1.1949, time 226.48ms, mfu 3.51%
+iter 2950: loss 1.2092, time 217.63ms, mfu 3.59%
+step 3000: train loss 1.1605, val loss 1.1790
+saving checkpoint to /content/proj/runs/char_large
+iter 3000: loss 1.1970, time 25675.30ms, mfu 3.23%
+iter 3050: loss 1.1728, time 210.56ms, mfu 3.35%
+iter 3100: loss 1.1519, time 217.78ms, mfu 3.44%
+iter 3150: loss 1.1552, time 230.47ms, mfu 3.50%
+iter 3200: loss 1.2335, time 221.34ms, mfu 3.57%
+step 3250: train loss 1.1444, val loss 1.1648
+saving checkpoint to /content/proj/runs/char_large
+iter 3250: loss 1.1657, time 20805.23ms, mfu 3.22%
+iter 3300: loss 1.1875, time 209.32ms, mfu 3.34%
+iter 3350: loss 1.2066, time 216.71ms, mfu 3.43%
+iter 3400: loss 1.1852, time 235.31ms, mfu 3.48%
+iter 3450: loss 1.1803, time 220.72ms, mfu 3.55%
+step 3500: train loss 1.1371, val loss 1.1556
+saving checkpoint to /content/proj/runs/char_large
+iter 3500: loss 1.1859, time 20152.59ms, mfu 3.20%
+iter 3550: loss 1.1618, time 207.89ms, mfu 3.33%
+iter 3600: loss 1.1616, time 217.89ms, mfu 3.42%
+iter 3650: loss 1.1669, time 225.10ms, mfu 3.49%
+iter 3700: loss 1.1801, time 219.81ms, mfu 3.57%
+step 3750: train loss 1.1239, val loss 1.1416
+saving checkpoint to /content/proj/runs/char_large
+iter 3750: loss 1.1694, time 20374.93ms, mfu 3.21%
+iter 3800: loss 1.1553, time 208.94ms, mfu 3.34%
+iter 3850: loss 1.1573, time 220.18ms, mfu 3.42%
+iter 3900: loss 1.1554, time 230.98ms, mfu 3.48%
+iter 3950: loss 1.1332, time 221.76ms, mfu 3.55%
+step 4000: train loss 1.1083, val loss 1.1343
+saving checkpoint to /content/proj/runs/char_large
+iter 4000: loss 1.1744, time 14359.39ms, mfu 3.20%
+iter 4050: loss 1.1643, time 210.39ms, mfu 3.32%
+iter 4100: loss 1.1403, time 210.24ms, mfu 3.43%
+iter 4150: loss 1.1468, time 214.11ms, mfu 3.52%
+iter 4200: loss 1.1565, time 218.36ms, mfu 3.60%
+step 4250: train loss 1.0988, val loss 1.1288
+saving checkpoint to /content/proj/runs/char_large
+iter 4250: loss 1.1447, time 20670.61ms, mfu 3.24%
+iter 4300: loss 1.1339, time 211.00ms, mfu 3.36%
+iter 4350: loss 1.1148, time 223.01ms, mfu 3.44%
+iter 4400: loss 1.1488, time 224.05ms, mfu 3.51%
+iter 4450: loss 1.1397, time 217.80ms, mfu 3.58%
+step 4500: train loss 1.0951, val loss 1.1194
+saving checkpoint to /content/proj/runs/char_large
+iter 4500: loss 1.1018, time 20106.24ms, mfu 3.23%
+iter 4550: loss 1.1453, time 209.52ms, mfu 3.35%
+iter 4600: loss 1.0885, time 220.06ms, mfu 3.44%
+iter 4650: loss 1.1443, time 228.68ms, mfu 3.50%
+iter 4700: loss 1.1592, time 222.53ms, mfu 3.56%
+step 4750: train loss 1.0813, val loss 1.1173
+saving checkpoint to /content/proj/runs/char_large
+iter 4750: loss 1.1155, time 20095.78ms, mfu 3.21%
+iter 4800: loss 1.1220, time 209.68ms, mfu 3.33%
+iter 4850: loss 1.1336, time 221.24ms, mfu 3.42%
+iter 4900: loss 1.1177, time 225.55ms, mfu 3.49%
+iter 4950: loss 1.1499, time 222.83ms, mfu 3.56%
+step 5000: train loss 1.0782, val loss 1.1082
+saving checkpoint to /content/proj/runs/char_large
+iter 5000: loss 1.0899, time 20419.63ms, mfu 3.21%
+iter 5050: loss 1.1302, time 211.79ms, mfu 3.32%
+iter 5100: loss 1.1209, time 219.97ms, mfu 3.41%
+iter 5150: loss 1.1003, time 230.97ms, mfu 3.47%
+iter 5200: loss 1.1123, time 219.71ms, mfu 3.55%
+step 5250: train loss 1.0714, val loss 1.1069
+saving checkpoint to /content/proj/runs/char_large
+iter 5250: loss 1.1057, time 20107.31ms, mfu 3.20%
+iter 5300: loss 1.0951, time 208.80ms, mfu 3.32%
+iter 5350: loss 1.1027, time 219.60ms, mfu 3.41%
+iter 5400: loss 1.0985, time 228.04ms, mfu 3.48%
+iter 5450: loss 1.1287, time 221.17ms, mfu 3.55%
+step 5500: train loss 1.0662, val loss 1.1013
+saving checkpoint to /content/proj/runs/char_large
+iter 5500: loss 1.0877, time 19860.65ms, mfu 3.20%
+iter 5550: loss 1.1128, time 209.61ms, mfu 3.32%
+iter 5600: loss 1.1191, time 218.46ms, mfu 3.41%
+iter 5650: loss 1.0825, time 228.90ms, mfu 3.48%
+iter 5700: loss 1.0851, time 219.83ms, mfu 3.55%
+step 5750: train loss 1.0602, val loss 1.0975
+saving checkpoint to /content/proj/runs/char_large
+iter 5750: loss 1.0920, time 20526.75ms, mfu 3.20%
+iter 5800: loss 1.0967, time 207.25ms, mfu 3.33%
+iter 5850: loss 1.0924, time 217.09ms, mfu 3.42%
+iter 5900: loss 1.0979, time 228.34ms, mfu 3.49%
+iter 5950: loss 1.1312, time 222.05ms, mfu 3.56%
+step 6000: train loss 1.0644, val loss 1.1010
+iter 6000: loss 1.1188, time 13542.03ms, mfu 3.21%

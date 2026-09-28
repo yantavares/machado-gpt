@@ -1,0 +1,73 @@
+diff --git a/model.py b/model.py
+index c698f8b..a6bcccc 100644
+--- a/model.py
++++ b/model.py
+@@ -205,24 +205,40 @@ class GPT(nn.Module):
+ 
+     @classmethod
+     def from_pretrained(cls, model_type, override_args=None):
+-        assert model_type in {'gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl'}
++        # >>> MODIFICAÇÃO DO ALUNO (projeto Machado de Assis) -----------------
++        # Original: assert model_type in {'gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl'}
++        # Passa a aceitar também um id do Hugging Face com arquitetura GPT-2
++        # (ex.: 'pierreguillou/gpt2-small-portuguese'), cujas dimensões são
++        # lidas do config do próprio checkpoint (ver bloco abaixo).
++        oficiais = {'gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl'}
++        assert model_type in oficiais or '/' in model_type
++        # <<< FIM DA MODIFICAÇÃO -----------------------------------------------
+         override_args = override_args or {} # default to empty dict
+         # only dropout can be overridden see more notes below
+         assert all(k == 'dropout' for k in override_args)
+         from transformers import GPT2LMHeadModel
+         print("loading weights from pretrained gpt: %s" % model_type)
+ 
+-        # n_layer, n_head and n_embd are determined from model_type
+-        config_args = {
+-            'gpt2':         dict(n_layer=12, n_head=12, n_embd=768),  # 124M params
+-            'gpt2-medium':  dict(n_layer=24, n_head=16, n_embd=1024), # 350M params
+-            'gpt2-large':   dict(n_layer=36, n_head=20, n_embd=1280), # 774M params
+-            'gpt2-xl':      dict(n_layer=48, n_head=25, n_embd=1600), # 1558M params
+-        }[model_type]
+-        print("forcing vocab_size=50257, block_size=1024, bias=True")
+-        config_args['vocab_size'] = 50257 # always 50257 for GPT model checkpoints
+-        config_args['block_size'] = 1024 # always 1024 for GPT model checkpoints
+-        config_args['bias'] = True # always True for GPT model checkpoints
++        # >>> MODIFICAÇÃO DO ALUNO: ramo para checkpoints de terceiros ---------
++        if model_type not in oficiais:
++            from transformers import GPT2Config
++            hf = GPT2Config.from_pretrained(model_type)
++            config_args = dict(n_layer=hf.n_layer, n_head=hf.n_head, n_embd=hf.n_embd,
++                               vocab_size=hf.vocab_size, block_size=hf.n_positions, bias=True)
++            print(f"config from checkpoint: {config_args}")
++        else:
++        # <<< FIM DA MODIFICAÇÃO (o bloco original abaixo só ganhou um nível de indentação)
++            # n_layer, n_head and n_embd are determined from model_type
++            config_args = {
++                'gpt2':         dict(n_layer=12, n_head=12, n_embd=768),  # 124M params
++                'gpt2-medium':  dict(n_layer=24, n_head=16, n_embd=1024), # 350M params
++                'gpt2-large':   dict(n_layer=36, n_head=20, n_embd=1280), # 774M params
++                'gpt2-xl':      dict(n_layer=48, n_head=25, n_embd=1600), # 1558M params
++            }[model_type]
++            print("forcing vocab_size=50257, block_size=1024, bias=True")
++            config_args['vocab_size'] = 50257 # always 50257 for GPT model checkpoints
++            config_args['block_size'] = 1024 # always 1024 for GPT model checkpoints
++            config_args['bias'] = True # always True for GPT model checkpoints
+         # we can override the dropout rate, if desired
+         if 'dropout' in override_args:
+             print(f"overriding dropout rate to {override_args['dropout']}")
+diff --git a/train.py b/train.py
+index de57850..e202d61 100644
+--- a/train.py
++++ b/train.py
+@@ -178,7 +178,10 @@ elif init_from == 'resume':
+     model.load_state_dict(state_dict)
+     iter_num = checkpoint['iter_num']
+     best_val_loss = checkpoint['best_val_loss']
+-elif init_from.startswith('gpt2'):
++# >>> MODIFICAÇÃO DO ALUNO: também aceita ids do Hugging Face com arquitetura GPT-2
++# (ex.: 'pierreguillou/gpt2-small-portuguese'). Original: elif init_from.startswith('gpt2'):
++elif init_from.startswith('gpt2') or '/' in init_from:
++# <<< FIM DA MODIFICAÇÃO
+     print(f"Initializing from OpenAI GPT-2 weights: {init_from}")
+     # initialize from OpenAI GPT-2 weights
+     override_args = dict(dropout=dropout)

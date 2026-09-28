@@ -1,0 +1,52 @@
+{
+  "modelo": "ptbr_zeroshot",
+  "dataset": "machado_ptbr",
+  "parametros": 124046592,
+  "block_size": 512,
+  "val": {
+    "tokens": 167859,
+    "caracteres": 676050,
+    "perda_por_token": 4.445512025718013,
+    "bpc": 1.5924365709112513,
+    "ppl_palavra": 533.6677649240401,
+    "segundos": 9.9
+  },
+  "test": {
+    "tokens": 168250,
+    "caracteres": 677182,
+    "perda_por_token": 4.44323584836872,
+    "bpc": 1.5926618324219741,
+    "ppl_palavra": 531.584525707948,
+    "segundos": 10.0
+  },
+  "test_por_genero": {
+    "conto": {
+      "bpc": 1.542825569037324,
+      "caracteres": 268141
+    },
+    "crítica": {
+      "bpc": 1.595089980387978,
+      "caracteres": 42270
+    },
+    "crônica": {
+      "bpc": 1.566992633320282,
+      "caracteres": 155545
+    },
+    "miscelânea": {
+      "bpc": 1.5381323695972586,
+      "caracteres": 4275
+    },
+    "poesia": {
+      "bpc": 2.0599634287645787,
+      "caracteres": 32409
+    },
+    "romance": {
+      "bpc": 1.6012572300910342,
+      "caracteres": 153901
+    },
+    "teatro": {
+      "bpc": 1.6469394851849042,
+      "caracteres": 20698
+    }
+  }
+}
